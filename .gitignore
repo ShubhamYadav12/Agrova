@@ -1,0 +1,56 @@
+# =========================================
+# AGROVA - Git Ignore
+# =========================================
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Java / Spring Boot ----------
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# ---------- Node / Angular ----------
+node_modules/
+dist/
+.angular/
+.cache/
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.iml
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Logs ----------
+logs/
+*.log
+
+# ---------- Local databases ----------
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------- Certificates / Private Keys ----------
+*.pem
+*.key
+*.p12
+*.jks
+
+# ---------- Local uploads / runtime ----------
+uploads/
+storage/
+
+# ---------- AI local secrets ----------
+ai/secrets/
+
+# ---------- Temporary files ----------
+*.tmp
+*.temp
