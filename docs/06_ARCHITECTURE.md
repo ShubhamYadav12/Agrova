@@ -1,127 +1,110 @@
-# Agrova Architecture
-
-1. Architecture Overview
-   1.1 Baseline Architecture
-   1.2 Architectural Direction
-
-2. Architecture Goals
-   2.1 Farmer-first
-   2.2 Modular
-   2.3 Secure
-   2.4 Reliable
-   2.5 Efficient APIs
-   2.6 AI Cost Efficiency
-   2.7 Data Isolation
-   2.8 Testability
-   2.9 Observability
-   2.10 Evolution
-
-3. System Architecture
-
-4. Frontend Architecture
-
-5. Backend Architecture
-   5.1 Module Structure
-   5.2 Module Responsibilities
-   5.3 Dependency Rules
-
-6. API Architecture
-   6.1 REST
-   6.2 JSON
-   6.3 Purposeful Read Models
-   6.4 Aggregation
-   6.5 Pagination
-   6.6 Error Handling
-
-7. Data Architecture
-   7.1 PostgreSQL
-   7.2 Flyway
-   7.3 Source of Truth
-   7.4 Data Scope
-   7.5 Provenance
-   7.6 History
-
-8. Farm Context Architecture
-
-9. Evidence and Intelligence Architecture
-   9.1 Evidence
-   9.2 Knowledge
-   9.3 Intelligence
-   9.4 Recommendations
-   9.5 Outcomes
-   9.6 Farm Memory
-
-10. AI Architecture
-    10.1 AI Provider
-    10.2 Persistent AI Results
-    10.3 Cache
-    10.4 Context-aware Reuse
-    10.5 Invalidation
-    10.6 AI Failure Isolation
-
-11. Diagnostics Architecture
-
-12. External Provider Architecture
-
-13. Security Architecture
-    13.1 Authentication
-    13.2 Authorization
-    13.3 Farm Isolation
-    13.4 Resource Isolation
-    13.5 Defense in Depth
-
-14. Failure Isolation
-
-15. Observability
-
-16. Testing Architecture
-
-17. MVP Architecture
-
-18. Future Evolution
-# Agrova Architecture
+﻿# Agrova Architecture
 
 ## 1. Architecture Overview
 
-Agrova is designed as a farmer-first Farm Intelligence platform and Digital Operating System for the farm.
+Agrova is designed as a farmer-centric Farm Operating System.
 
-The architecture must support Agrova's long-term vision while remaining practical, secure, testable, maintainable, and deliverable by a small development team.
+The architecture follows the principle:
 
-Agrova will begin as a modular monolith and evolve toward selectively separated services only when real operational, scaling, deployment, ownership, or reliability requirements justify that transition.
+> The farmer should not have to adapt to the software. The software should adapt to the farmer's day.
+
+Agrova connects farm identity, farm resources, observations, evidence, knowledge, intelligence, recommendations, actions, outcomes, and farm memory into one evolving system.
 
 ### 1.1 Baseline Architecture
-
-The initial system architecture is:
 
 ```text
                          FARMER
                             |
-                            v
-                  Angular + TypeScript
-                       FRONTEND
+                        FARM OS
                             |
-                        REST API
+             +--------------+--------------+
+             |                             |
+          PASHU                           KHET
+          Animals                          Crops
+             |                             |
+      Health/Feed/Milk              Soil/Water/Crop
+      Vet/Breeding/Records          Weather/Pest
+             |                             |
+             +--------------+--------------+
+                            |
+                     FARM RESOURCES
+                            |
+                     FARM INTELLIGENCE
+                            |
+            +---------------+---------------+
+            |               |               |
+         Weather           AI            Experts
+         Soil             Voice           Labs
+         Water            Photos       Community
                             |
                             v
-                 +-----------------------+
-                 |     SPRING BOOT       |
-                 |    MODULAR MONOLITH   |
-                 |                       |
-                 | Auth                  |
-                 | Farmer                |
-                 | Farm                  |
-                 | Pashu                 |
-                 | Khet                  |
-                 | Resources             |
-                 | Activities            |
-                 | Tasks                 |
-                 | Weather               |
-                 | Conversation          |
-                 | Intelligence          |
-                 | Economics             |
-                 +-----------+-----------+
-                             |
-                             v
-                         PostgreSQL
-                             |
-                           Flyway
+                        ECONOMICS
+                            |
+                         WEALTH
+
+
+## 2. Architectural Principles
+
+Agrova architecture is governed by the following principles.
+
+### 2.1 Farmer-Centric Design
+
+The system must adapt to the farmer's workflow, language, knowledge level, available devices, and daily routine.
+
+Technology should reduce cognitive and operational burden rather than create additional work.
+
+### 2.2 Farm as the Primary Context
+
+Agrova should understand the particular farm before making recommendations.
+
+Farm identity, fields, crops, animals, resources, activities, observations, weather, evidence, decisions, and outcomes form the farm context.
+
+### 2.3 Observation Before Recommendation
+
+Agrova should distinguish between:
+
+- Farmer observation
+- Measured evidence
+- Professional assessment
+- AI interpretation
+- Recommendation
+
+The system must not present an inference as a verified fact.
+
+### 2.4 Evidence-Driven Intelligence
+
+When available information is insufficient for a useful decision, Agrova should identify the information gap and request or obtain appropriate evidence.
+
+Examples include:
+
+- Crop or pest photographs
+- Soil testing
+- Water testing
+- Weather information
+- Expert assessment
+- Historical farm records
+
+### 2.5 Human-in-the-Loop Safety
+
+AI assists the farmer and agricultural professionals but does not replace professional judgment where verification is required.
+
+Recommendations must remain explainable, traceable, and appropriately qualified.
+
+### 2.6 History Must Be Preserved
+
+Current farm state must never destroy historical information.
+
+Agrova should retain relevant history for crops, fields, animals, soil, weather, inputs, activities, harvests, yields, economics, decisions, recommendations, and outcomes.
+
+### 2.7 Graceful Degradation
+
+External providers must not become single points of failure for core farm records.
+
+If weather, AI, maps, laboratory, or other external services are unavailable, Agrova should continue supporting unaffected core functionality.
+
+### 2.8 Modular Evolution
+
+Agrova should begin as a modular monolith with clear domain boundaries.
+
+Modules must have explicit responsibilities and contracts so that individual components can evolve independently when scale or operational requirements justify further separation.
+
