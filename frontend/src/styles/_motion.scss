@@ -1,0 +1,139 @@
+// ============================================================
+// AGROVA — MOTION SYSTEM
+// Global motion language for the entire application.
+// ============================================================
+
+// ------------------------------------------------------------
+// DURATIONS
+// ------------------------------------------------------------
+
+$agrova-duration-instant: 0ms;
+$agrova-duration-fast: 120ms;
+$agrova-duration-normal: 220ms;
+$agrova-duration-medium: 320ms;
+$agrova-duration-slow: 480ms;
+$agrova-duration-slower: 720ms;
+
+
+// ------------------------------------------------------------
+// EASINGS
+// ------------------------------------------------------------
+
+$agrova-ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+$agrova-ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+$agrova-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+$agrova-ease-linear: linear;
+
+
+// ------------------------------------------------------------
+// TRANSITION PRESETS
+// ------------------------------------------------------------
+
+@mixin agrova-transition-fast {
+  transition:
+    transform $agrova-duration-fast $agrova-ease-standard,
+    opacity $agrova-duration-fast $agrova-ease-standard,
+    background-color $agrova-duration-fast $agrova-ease-standard,
+    border-color $agrova-duration-fast $agrova-ease-standard,
+    box-shadow $agrova-duration-fast $agrova-ease-standard,
+    color $agrova-duration-fast $agrova-ease-standard;
+}
+
+@mixin agrova-transition {
+  transition:
+    transform $agrova-duration-normal $agrova-ease-standard,
+    opacity $agrova-duration-normal $agrova-ease-standard,
+    background-color $agrova-duration-normal $agrova-ease-standard,
+    border-color $agrova-duration-normal $agrova-ease-standard,
+    box-shadow $agrova-duration-normal $agrova-ease-standard,
+    color $agrova-duration-normal $agrova-ease-standard;
+}
+
+@mixin agrova-transition-slow {
+  transition:
+    transform $agrova-duration-medium $agrova-ease-emphasized,
+    opacity $agrova-duration-medium $agrova-ease-emphasized,
+    background-color $agrova-duration-medium $agrova-ease-emphasized,
+    border-color $agrova-duration-medium $agrova-ease-emphasized,
+    box-shadow $agrova-duration-medium $agrova-ease-emphasized,
+    color $agrova-duration-medium $agrova-ease-emphasized;
+}
+
+
+// ------------------------------------------------------------
+// INTERACTION MOTION
+// ------------------------------------------------------------
+
+@mixin agrova-hover-lift {
+  transform: translateY(-2px);
+}
+
+@mixin agrova-hover-lift-strong {
+  transform: translateY(-4px);
+}
+
+@mixin agrova-press {
+  transform: scale(0.98);
+}
+
+
+// ------------------------------------------------------------
+// ENTER / EXIT MOTION
+// ------------------------------------------------------------
+
+@mixin agrova-fade-in {
+  animation:
+    agrova-fade-in
+    $agrova-duration-medium
+    $agrova-ease-standard
+    both;
+}
+
+@mixin agrova-slide-up {
+  animation:
+    agrova-slide-up
+    $agrova-duration-medium
+    $agrova-ease-emphasized
+    both;
+}
+
+
+// ------------------------------------------------------------
+// KEYFRAMES
+// ------------------------------------------------------------
+
+@keyframes agrova-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes agrova-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+// ------------------------------------------------------------
+// REDUCED MOTION
+// ------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

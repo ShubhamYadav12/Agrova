@@ -1,0 +1,83 @@
+<div class="field">
+    <header class="field__header">
+        <div>
+            <p class="field__eyebrow">KHET / FIELD</p>
+            <h1>Add field</h1>
+            <p class="field__subtitle">
+                Register a field so Agrova can keep its land, crop, soil, water
+                and
+                history connected.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="New field"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="field-profile-title">
+        <agrova-card>
+            <div class="field__panel">
+                <div class="field__panel-header">
+                    <div>
+                        <p class="field__eyebrow">FIELD PROFILE</p>
+                        <h2 id="field-profile-title">Basic information</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Required"
+                        variant="warning" />
+                </div>
+
+                <div class="field__form">
+                    <agrova-input
+                        label="Field name / identifier"
+                        placeholder="Example: North Field or K-001" />
+
+                    <agrova-input
+                        label="Area"
+                        placeholder="Enter field area" />
+
+                    <agrova-input
+                        label="Local land unit"
+                        placeholder="Example: Biswa, Bigha" />
+
+                    <agrova-input
+                        label="Location / locality"
+                        placeholder="Enter field location" />
+                </div>
+
+                <div class="field__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save field
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="field-identity-title">
+        <agrova-card>
+            <div class="field__panel field__identity">
+                <div>
+                    <p class="field__eyebrow">FIELD IDENTITY</p>
+                    <h2 id="field-identity-title">One field, preserved
+                        history</h2>
+                    <p>
+                        This field will remain the parent context for its crops,
+                        soil,
+                        irrigation, observations, harvests and yield history.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Field-level context"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

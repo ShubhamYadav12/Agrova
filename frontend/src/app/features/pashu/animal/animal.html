@@ -1,0 +1,160 @@
+<div class="animal">
+    <header class="animal__header">
+        <div>
+            <p class="animal__eyebrow">PASHU / ANIMAL</p>
+
+            <h1>🐄 Animal profile</h1>
+
+            <p class="animal__subtitle">
+                Keep one animal's identity connected to its health, care,
+                productivity and history.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Animal identity"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="identity-title">
+        <agrova-card>
+            <div class="animal__panel">
+                <div class="animal__section-header">
+                    <div>
+                        <p class="animal__eyebrow">ANIMAL IDENTITY</p>
+                        <h2 id="identity-title">Tell Agrova about this
+                            animal</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Core record"
+                        variant="success" />
+                </div>
+
+                <div class="animal__form">
+                    <agrova-input
+                        label="Animal name / identifier"
+                        placeholder="Example: Gauri" />
+
+                    <agrova-input
+                        label="Animal type"
+                        placeholder="Example: Cow" />
+
+                    <agrova-input
+                        label="Breed"
+                        placeholder="Example: Sahiwal" />
+
+                    <agrova-input
+                        label="Sex"
+                        placeholder="Example: Female" />
+
+                    <agrova-input
+                        label="Date of birth / age"
+                        placeholder="Example: 3 years" />
+
+                    <agrova-input
+                        label="Identification details"
+                        placeholder="Ear tag or other identification" />
+                </div>
+
+                <div class="animal__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save animal
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="status-title">
+        <agrova-card>
+            <div class="animal__panel">
+                <div class="animal__section-header">
+                    <div>
+                        <p class="animal__eyebrow">ANIMAL OVERVIEW</p>
+                        <h2 id="status-title">🐄 This animal's current
+                            picture</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Connected records"
+                        variant="info" />
+                </div>
+
+                <div class="animal__status-grid">
+                    <div class="animal__status-card">
+                        <span>Health</span>
+                        <strong>—</strong>
+                        <small>No health record yet</small>
+                    </div>
+
+                    <div class="animal__status-card">
+                        <span>Vaccination</span>
+                        <strong>—</strong>
+                        <small>No vaccination record yet</small>
+                    </div>
+
+                    <div class="animal__status-card">
+                        <span>Feed</span>
+                        <strong>—</strong>
+                        <small>No feed record yet</small>
+                    </div>
+
+                    <div class="animal__status-card">
+                        <span>Milk</span>
+                        <strong>—</strong>
+                        <small>No milk record yet</small>
+                    </div>
+                </div>
+
+                <div class="animal__health-action">
+                    <div>
+                        <p class="animal__eyebrow">HEALTH & CARE</p>
+                        <h3>🩺 Keep health records connected</h3>
+                        <p>
+                            Record what you observe, treatments given and
+                            veterinary
+                            assessments without losing the animal's history.
+                        </p>
+                    </div>
+
+                    <a
+                        routerLink="/pashu/health"
+                        class="animal__health-link">
+                        View health records →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="history-title">
+        <agrova-card>
+            <div class="animal__panel animal__history">
+                <div>
+                    <p class="animal__eyebrow">ANIMAL MEMORY</p>
+
+                    <h2 id="history-title">
+                        This animal's history stays connected
+                    </h2>
+
+                    <p>
+                        Health events, treatments, vaccinations, feed, breeding
+                        and
+                        milk records will remain connected to this animal
+                        instead of
+                        becoming isolated entries.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Farm memory"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

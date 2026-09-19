@@ -1,0 +1,8 @@
+<div
+  class="agrova-card"
+  [class.agrova-card--interactive]="interactive()"
+  [attr.tabindex]="interactive() ? 0 : null"
+  [attr.role]="interactive() ? 'button' : null"
+>
+  <ng-content></ng-content>
+</div>

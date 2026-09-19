@@ -1,0 +1,143 @@
+// ============================================================
+// AGROVA — VISUAL EFFECTS
+// Reusable futuristic visual primitives.
+// ============================================================
+
+
+// ------------------------------------------------------------
+// GLASS SURFACE
+// ------------------------------------------------------------
+
+@mixin agrova-glass {
+  background: var(--agrova-surface-glass);
+  border: 1px solid var(--agrova-border-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+
+// ------------------------------------------------------------
+// GLASS SURFACE — STRONG
+// ------------------------------------------------------------
+
+@mixin agrova-glass-strong {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--agrova-border-glass);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+}
+
+
+// ------------------------------------------------------------
+// SOFT ELEVATION
+// ------------------------------------------------------------
+
+@mixin agrova-elevation-sm {
+  box-shadow: var(--agrova-shadow-sm);
+}
+
+
+@mixin agrova-elevation-md {
+  box-shadow: var(--agrova-shadow-md);
+}
+
+
+@mixin agrova-elevation-lg {
+  box-shadow: var(--agrova-shadow-lg);
+}
+
+
+// ------------------------------------------------------------
+// BRAND GLOW
+// ------------------------------------------------------------
+
+@mixin agrova-glow {
+  box-shadow:
+    0 0 0 1px rgba(95, 189, 130, 0.12),
+    0 8px 32px rgba(47, 143, 91, 0.18);
+}
+
+
+// ------------------------------------------------------------
+// SOFT BRAND GRADIENT
+// ------------------------------------------------------------
+
+@mixin agrova-gradient-brand {
+  background:
+    linear-gradient(
+      135deg,
+      var(--agrova-primary-deep),
+      var(--agrova-primary),
+      var(--agrova-primary-soft)
+    );
+}
+
+
+// ------------------------------------------------------------
+// ATMOSPHERIC BACKGROUND
+// ------------------------------------------------------------
+
+@mixin agrova-atmosphere {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(184, 233, 134, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(95, 189, 130, 0.14),
+      transparent 32%
+    ),
+    var(--agrova-bg);
+}
+
+
+// ------------------------------------------------------------
+// HAIRLINE GLASS BORDER
+// ------------------------------------------------------------
+
+@mixin agrova-glass-border {
+  border: 1px solid var(--agrova-border-glass);
+}
+
+
+// ------------------------------------------------------------
+// INTERACTIVE LIFT
+// ------------------------------------------------------------
+
+@mixin agrova-interactive-lift {
+  transition:
+    transform var(--agrova-motion-normal)
+      var(--agrova-ease-standard),
+    box-shadow var(--agrova-motion-normal)
+      var(--agrova-ease-standard);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--agrova-shadow-md);
+  }
+}
+
+
+// ------------------------------------------------------------
+// FOCUS RING
+// ------------------------------------------------------------
+
+@mixin agrova-focus-ring {
+  &:focus-visible {
+    outline: 3px solid var(--agrova-primary-soft);
+    outline-offset: 3px;
+  }
+}
+
+
+// ------------------------------------------------------------
+// REDUCED MOTION SAFETY
+// ------------------------------------------------------------
+
+@mixin agrova-motion-safe {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}

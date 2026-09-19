@@ -1,0 +1,117 @@
+<div class="farm">
+    <header class="farm__header">
+        <div>
+            <p class="farm__eyebrow">FARM</p>
+            <h1>Your farm</h1>
+            <p class="farm__subtitle">
+                Create the farm context that Agrova will use to understand your
+                day-to-day farming.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Farm setup"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="farm-profile-title">
+        <agrova-card>
+            <div class="farm__panel">
+                <div class="farm__panel-header">
+                    <div>
+                        <p class="farm__eyebrow">FARM PROFILE</p>
+                        <h2 id="farm-profile-title">Farm information</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not completed"
+                        variant="warning" />
+                </div>
+
+                <div class="farm__form">
+                    <agrova-input
+                        label="Farm name"
+                        placeholder="Enter your farm name" />
+
+                    <agrova-input
+                        label="Village / locality"
+                        placeholder="Enter your village or locality" />
+                </div>
+
+                <div class="farm__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save farm
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="farm-context-title">
+        <agrova-card>
+            <div class="farm__panel">
+                <div class="farm__panel-header">
+                    <div>
+                        <p class="farm__eyebrow">FARM CONTEXT</p>
+                        <h2 id="farm-context-title">Your farm context</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Getting started"
+                        variant="info" />
+                </div>
+
+                <div class="farm__context-grid">
+                    <div class="farm__context-item">
+                        <span>Fields</span>
+                        <strong>—</strong>
+                        <small>No fields registered</small>
+                    </div>
+
+                    <div class="farm__context-item">
+                        <span>Animals</span>
+                        <strong>—</strong>
+                        <small>No animals registered</small>
+                    </div>
+
+                    <div class="farm__context-item">
+                        <span>Resources</span>
+                        <strong>—</strong>
+                        <small>No resources registered</small>
+                    </div>
+
+                    <div class="farm__context-item">
+                        <span>Activities</span>
+                        <strong>—</strong>
+                        <small>No activities recorded</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="farm-role-title">
+        <agrova-card>
+            <div class="farm__panel farm__boundary">
+                <div>
+                    <p class="farm__eyebrow">FARM CONTEXT BOUNDARY</p>
+                    <h2 id="farm-role-title">One farm, one shared context</h2>
+                    <p>
+                        Farm information will become the shared context for your
+                        fields,
+                        animals, resources, activities, tasks and future farm
+                        intelligence.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Primary context"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

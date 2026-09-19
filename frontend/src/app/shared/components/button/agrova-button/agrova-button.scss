@@ -1,0 +1,180 @@
+// ============================================================
+// AGROVA — BUTTON
+// Reusable application-wide action primitive.
+// ============================================================
+
+:host {
+  --button-height: 44px;
+  --button-padding-x: 18px;
+  --button-radius: var(--agrova-radius-pill);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: var(--button-height);
+  padding: 0 var(--button-padding-x);
+
+  border: 1px solid transparent;
+  border-radius: var(--button-radius);
+
+  font: inherit;
+  font-size: var(--agrova-text-sm);
+  font-weight: 650;
+  line-height: 1;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    transform var(--agrova-motion-fast) var(--agrova-ease-standard),
+    background-color var(--agrova-motion-normal) var(--agrova-ease-standard),
+    border-color var(--agrova-motion-normal) var(--agrova-ease-standard),
+    box-shadow var(--agrova-motion-normal) var(--agrova-ease-standard),
+    opacity var(--agrova-motion-normal) var(--agrova-ease-standard);
+}
+
+:host(:focus-visible) {
+  outline: 3px solid var(--agrova-primary-soft);
+  outline-offset: 3px;
+}
+
+:host(:hover:not([disabled])) {
+  transform: translateY(-1px);
+}
+
+:host(:active:not([disabled])) {
+  transform: translateY(0);
+}
+
+:host([disabled]) {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+:host(.agrova-button--sm) {
+  --button-height: 36px;
+  --button-padding-x: 14px;
+
+  font-size: var(--agrova-text-xs);
+}
+
+:host(.agrova-button--md) {
+  --button-height: 44px;
+  --button-padding-x: 18px;
+}
+
+:host(.agrova-button--lg) {
+  --button-height: 52px;
+  --button-padding-x: 24px;
+
+  font-size: var(--agrova-text-md);
+}
+
+:host(.agrova-button--full-width) {
+  width: 100%;
+}
+
+:host(.agrova-button--primary) {
+  background: var(--agrova-primary);
+  color: var(--agrova-text-on-primary);
+
+  box-shadow: var(--agrova-shadow-sm);
+}
+
+:host(.agrova-button--primary:hover:not([disabled])) {
+  background: var(--agrova-primary-deep);
+  box-shadow: var(--agrova-shadow-md);
+}
+
+:host(.agrova-button--secondary) {
+  background: var(--agrova-surface);
+  color: var(--agrova-primary-deep);
+  border-color: var(--agrova-border-strong);
+}
+
+:host(.agrova-button--secondary:hover:not([disabled])) {
+  border-color: var(--agrova-primary);
+  background: var(--agrova-surface-soft);
+}
+
+:host(.agrova-button--ghost) {
+  background: transparent;
+  color: var(--agrova-primary-deep);
+}
+
+:host(.agrova-button--ghost:hover:not([disabled])) {
+  background: var(--agrova-surface-soft);
+}
+
+:host(.agrova-button--danger) {
+  background: var(--agrova-danger);
+  color: #ffffff;
+  box-shadow: var(--agrova-shadow-sm);
+}
+
+:host(.agrova-button--danger:hover:not([disabled])) {
+  filter: brightness(0.92);
+  box-shadow: var(--agrova-shadow-md);
+}
+
+.agrova-button__content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--agrova-space-2);
+}
+
+.agrova-button__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.agrova-button__label--loading {
+  opacity: 0.75;
+}
+
+.agrova-button__spinner {
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+
+  animation: agrova-button-spin 700ms linear infinite;
+}
+
+@keyframes agrova-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// ------------------------------------------------------------
+// TOUCH DEVICES
+// ------------------------------------------------------------
+
+@media (hover: none) and (pointer: coarse) {
+  :host {
+    min-height: 48px;
+  }
+
+  :host(.agrova-button--sm) {
+    min-height: 44px;
+  }
+}
+
+// ------------------------------------------------------------
+// REDUCED MOTION
+// ------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  :host {
+    transition: none;
+  }
+
+  .agrova-button__spinner {
+    animation: none;
+  }
+}

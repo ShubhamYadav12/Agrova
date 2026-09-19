@@ -1,0 +1,14 @@
+<span class="agrova-button__content">
+  @if (loading()) {
+    <span
+      class="agrova-button__spinner"
+      aria-hidden="true">
+    </span>
+  }
+
+  <span
+    class="agrova-button__label"
+    [class.agrova-button__label--loading]="loading()">
+    <ng-content></ng-content>
+  </span>
+</span>

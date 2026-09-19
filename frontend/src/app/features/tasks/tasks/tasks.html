@@ -1,0 +1,281 @@
+<div class="tasks">
+    <header class="tasks__header">
+        <div>
+            <p class="tasks__eyebrow">FARM / TASKS</p>
+
+            <h1>📋 Tasks</h1>
+
+            <p class="tasks__subtitle">
+                Keep track of what needs attention on the farm, why it matters
+                and what should happen next.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Next actions"
+            variant="success" />
+    </header>
+
+    <!-- TASK OVERVIEW -->
+    <section aria-labelledby="overview-title">
+        <agrova-card>
+            <div class="tasks__panel">
+                <div class="tasks__section-header">
+                    <div>
+                        <p class="tasks__eyebrow">TASK OVERVIEW</p>
+
+                        <h2 id="overview-title">
+                            What needs attention
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm priorities"
+                        variant="info" />
+                </div>
+
+                <div class="tasks__overview">
+                    <div class="tasks__overview-item">
+                        <span>Today</span>
+                        <strong>—</strong>
+                        <small>No tasks due today</small>
+                    </div>
+
+                    <div class="tasks__overview-item">
+                        <span>Upcoming</span>
+                        <strong>—</strong>
+                        <small>No upcoming tasks</small>
+                    </div>
+
+                    <div class="tasks__overview-item">
+                        <span>Overdue</span>
+                        <strong>—</strong>
+                        <small>No overdue tasks</small>
+                    </div>
+
+                    <div class="tasks__overview-item">
+                        <span>Completed</span>
+                        <strong>—</strong>
+                        <small>No completed tasks yet</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- NEXT ACTION -->
+    <section aria-labelledby="next-title">
+        <agrova-card>
+            <div class="tasks__panel">
+                <div class="tasks__section-header">
+                    <div>
+                        <p class="tasks__eyebrow">NEXT ACTION</p>
+
+                        <h2 id="next-title">
+                            👨‍🌾 What should happen next?
+                        </h2>
+
+                        <p class="tasks__section-description">
+                            A task represents something that still needs to be
+                            done.
+                            It becomes an activity only after the work actually
+                            happens.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Core workflow"
+                        variant="success" />
+                </div>
+
+                <div class="tasks__next-card">
+                    <span class="tasks__next-icon">📋</span>
+
+                    <div>
+                        <h3>No next action recorded</h3>
+
+                        <p>
+                            Once farm activities, crop stages, animal care and
+                            other
+                            context are recorded, Agrova can keep the next
+                            actions
+                            connected to the right farm resource.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- TASK CONTEXT -->
+    <section aria-labelledby="context-title">
+        <agrova-card>
+            <div class="tasks__panel">
+                <div class="tasks__section-header">
+                    <div>
+                        <p class="tasks__eyebrow">TASK CONTEXT</p>
+
+                        <h2 id="context-title">
+                            🔗 A task should know what it belongs to
+                        </h2>
+
+                        <p class="tasks__section-description">
+                            Tasks become useful when they are connected to the
+                            field, crop, animal, resource or another real farm
+                            context.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Connected context"
+                        variant="info" />
+                </div>
+
+                <div class="tasks__context-grid">
+                    <div class="tasks__context-card">
+                        <span class="tasks__context-icon">🌾</span>
+
+                        <h3>Field / Crop</h3>
+
+                        <p>
+                            Tasks related to sowing, irrigation, crop care,
+                            observation or harvest.
+                        </p>
+                    </div>
+
+                    <div class="tasks__context-card">
+                        <span class="tasks__context-icon">🐄</span>
+
+                        <h3>Animal</h3>
+
+                        <p>
+                            Tasks related to health, feed, vaccination, breeding
+                            or
+                            animal care.
+                        </p>
+                    </div>
+
+                    <div class="tasks__context-card">
+                        <span class="tasks__context-icon">🧰</span>
+
+                        <h3>Resource</h3>
+
+                        <p>
+                            Tasks related to obtaining, preparing or using a
+                            farm
+                            resource.
+                        </p>
+                    </div>
+
+                    <div class="tasks__context-card">
+                        <span class="tasks__context-icon">🚜</span>
+
+                        <h3>Farm operation</h3>
+
+                        <p>
+                            Tasks that involve equipment, labour or broader farm
+                            operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- TASK LIFECYCLE -->
+    <section aria-labelledby="lifecycle-title">
+        <agrova-card>
+            <div class="tasks__panel">
+                <div class="tasks__section-header">
+                    <div>
+                        <p class="tasks__eyebrow">TASK LIFECYCLE</p>
+
+                        <h2 id="lifecycle-title">
+                            📋 From need to completed work
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm workflow"
+                        variant="warning" />
+                </div>
+
+                <div class="tasks__lifecycle">
+                    <div class="tasks__lifecycle-step">
+                        <span class="tasks__step-icon">💡</span>
+
+                        <h3>Identified</h3>
+
+                        <p>
+                            Something needs attention.
+                        </p>
+                    </div>
+
+                    <span class="tasks__arrow">→</span>
+
+                    <div class="tasks__lifecycle-step">
+                        <span class="tasks__step-icon">📋</span>
+
+                        <h3>Planned</h3>
+
+                        <p>
+                            A task is created with context and timing.
+                        </p>
+                    </div>
+
+                    <span class="tasks__arrow">→</span>
+
+                    <div class="tasks__lifecycle-step">
+                        <span class="tasks__step-icon">🚜</span>
+
+                        <h3>Done</h3>
+
+                        <p>
+                            The work actually happens.
+                        </p>
+                    </div>
+
+                    <span class="tasks__arrow">→</span>
+
+                    <div class="tasks__lifecycle-step">
+                        <span class="tasks__step-icon">📝</span>
+
+                        <h3>Activity</h3>
+
+                        <p>
+                            What happened becomes farm memory.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FARM MEMORY -->
+    <section aria-labelledby="memory-title">
+        <agrova-card>
+            <div class="tasks__memory">
+                <div>
+                    <p class="tasks__eyebrow">TASK MEMORY</p>
+
+                    <h2 id="memory-title">
+                        The next action should learn from the past
+                    </h2>
+
+                    <p>
+                        Agrova will eventually connect tasks with activities,
+                        weather, crop stages, animal health, resources and
+                        outcomes
+                        so future actions can be grounded in what actually
+                        happened
+                        before.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Connected history"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

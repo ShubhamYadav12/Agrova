@@ -1,0 +1,84 @@
+<header class="agrova-context">
+
+    <div class="agrova-context__location">
+        <span class="agrova-context__farm-icon">🌾</span>
+
+        <div>
+            <span class="agrova-context__label">CURRENT FARM</span>
+
+            <strong>{{ context().farmName }}</strong>
+
+            <span class="agrova-context__place">
+                {{ context().farmSubtitle }}
+            </span>
+        </div>
+    </div>
+
+    <div class="agrova-context__operating">
+
+        <div class="agrova-context__control">
+            <span class="agrova-context__control-label">
+                OPERATING AS
+            </span>
+
+            <strong>👨‍🌾 {{ context().actorLabel }}</strong>
+
+            <span>
+                {{ context().actorSubtitle }}
+            </span>
+        </div>
+
+        <div class="agrova-context__divider"></div>
+
+        <div class="agrova-context__control">
+            <span class="agrova-context__control-label">
+                SCOPE
+            </span>
+
+            <strong>
+                {{ context().scopeLabel }}
+            </strong>
+
+            <span>
+                {{ context().scopeSubtitle }}
+            </span>
+        </div>
+
+    </div>
+
+    <div class="agrova-context__path">
+
+        <a [routerLink]="context().sectionRoute">
+            {{ context().section }}
+        </a>
+
+        <span>›</span>
+
+        <strong>{{ context().current }}</strong>
+
+    </div>
+
+    <div class="agrova-context__signals">
+
+        <a
+            class="agrova-context__signal"
+            routerLink="/weather">
+            <span>☀️</span>
+            <span>Weather</span>
+        </a>
+
+        <a
+            class="agrova-context__signal"
+            routerLink="/tasks">
+            <span>📋</span>
+            <span>Tasks</span>
+        </a>
+
+        <div class="agrova-context__attention">
+            <span class="agrova-context__attention-dot"></span>
+            <span>Farm attention</span>
+        </div>
+
+    </div>
+
+</header>

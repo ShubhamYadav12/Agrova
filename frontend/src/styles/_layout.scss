@@ -1,0 +1,489 @@
+// ============================================================
+// AGROVA — GLOBAL LAYOUT SYSTEM
+// Reusable layout primitives for the entire application.
+// ============================================================
+
+
+// ------------------------------------------------------------
+// ROOT / APPLICATION LAYOUT
+// ------------------------------------------------------------
+
+.agrova-app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--agrova-bg);
+  color: var(--agrova-text);
+}
+
+
+// ------------------------------------------------------------
+// PAGE
+// ------------------------------------------------------------
+
+.agrova-page {
+  width: 100%;
+  min-width: 0;
+
+  flex: 1 1 auto;
+}
+
+
+// ------------------------------------------------------------
+// CONTENT CONTAINER
+// ------------------------------------------------------------
+
+.agrova-container {
+  width: 100%;
+  max-width: 1440px;
+
+  margin-inline: auto;
+
+  padding-inline: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// NARROW CONTENT CONTAINER
+// Useful for forms, authentication and focused content.
+// ------------------------------------------------------------
+
+.agrova-container-narrow {
+  width: 100%;
+  max-width: 720px;
+
+  margin-inline: auto;
+
+  padding-inline: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// WIDE CONTENT CONTAINER
+// ------------------------------------------------------------
+
+.agrova-container-wide {
+  width: 100%;
+  max-width: 1680px;
+
+  margin-inline: auto;
+
+  padding-inline: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// FULL-BLEED CONTAINER
+// ------------------------------------------------------------
+
+.agrova-container-fluid {
+  width: 100%;
+  min-width: 0;
+
+  padding-inline: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// SECTION
+// ------------------------------------------------------------
+
+.agrova-section {
+  width: 100%;
+  min-width: 0;
+
+  padding-block: var(--agrova-space-10);
+}
+
+
+// ------------------------------------------------------------
+// SECTION COMPACT
+// ------------------------------------------------------------
+
+.agrova-section-compact {
+  width: 100%;
+  min-width: 0;
+
+  padding-block: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// SECTION LARGE
+// ------------------------------------------------------------
+
+.agrova-section-large {
+  width: 100%;
+  min-width: 0;
+
+  padding-block: var(--agrova-space-16);
+}
+
+
+// ------------------------------------------------------------
+// STACK
+// Vertical layout primitive.
+// ------------------------------------------------------------
+
+.agrova-stack {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.agrova-stack-sm {
+  gap: var(--agrova-space-2);
+}
+
+.agrova-stack-md {
+  gap: var(--agrova-space-4);
+}
+
+.agrova-stack-lg {
+  gap: var(--agrova-space-6);
+}
+
+.agrova-stack-xl {
+  gap: var(--agrova-space-8);
+}
+
+
+// ------------------------------------------------------------
+// ROW
+// Horizontal layout primitive.
+// ------------------------------------------------------------
+
+.agrova-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+}
+
+.agrova-row-wrap {
+  flex-wrap: wrap;
+}
+
+.agrova-row-between {
+  justify-content: space-between;
+}
+
+.agrova-row-start {
+  justify-content: flex-start;
+}
+
+.agrova-row-center {
+  justify-content: center;
+}
+
+.agrova-row-end {
+  justify-content: flex-end;
+}
+
+
+// ------------------------------------------------------------
+// GAP UTILITIES
+// ------------------------------------------------------------
+
+.agrova-gap-1 {
+  gap: var(--agrova-space-1);
+}
+
+.agrova-gap-2 {
+  gap: var(--agrova-space-2);
+}
+
+.agrova-gap-3 {
+  gap: var(--agrova-space-3);
+}
+
+.agrova-gap-4 {
+  gap: var(--agrova-space-4);
+}
+
+.agrova-gap-5 {
+  gap: var(--agrova-space-5);
+}
+
+.agrova-gap-6 {
+  gap: var(--agrova-space-6);
+}
+
+.agrova-gap-8 {
+  gap: var(--agrova-space-8);
+}
+
+
+// ------------------------------------------------------------
+// GRID
+// Generic responsive grid primitive.
+// ------------------------------------------------------------
+
+.agrova-grid {
+  display: grid;
+  min-width: 0;
+
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+
+// ------------------------------------------------------------
+// AUTO GRID
+// Automatically adapts to available width.
+// ------------------------------------------------------------
+
+.agrova-auto-grid {
+  display: grid;
+  min-width: 0;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 280px), 1fr)
+  );
+
+  gap: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// TWO-COLUMN GRID
+// ------------------------------------------------------------
+
+.agrova-grid-2 {
+  display: grid;
+  min-width: 0;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// THREE-COLUMN GRID
+// ------------------------------------------------------------
+
+.agrova-grid-3 {
+  display: grid;
+  min-width: 0;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// FOUR-COLUMN GRID
+// ------------------------------------------------------------
+
+.agrova-grid-4 {
+  display: grid;
+  min-width: 0;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: var(--agrova-space-6);
+}
+
+
+// ------------------------------------------------------------
+// FLEX GROW
+// ------------------------------------------------------------
+
+.agrova-flex-1 {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+
+// ------------------------------------------------------------
+// WIDTH
+// ------------------------------------------------------------
+
+.agrova-w-full {
+  width: 100%;
+}
+
+
+// ------------------------------------------------------------
+// HEIGHT
+// ------------------------------------------------------------
+
+.agrova-h-full {
+  height: 100%;
+}
+
+.agrova-min-h-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+
+// ------------------------------------------------------------
+// OVERFLOW
+// ------------------------------------------------------------
+
+.agrova-overflow-hidden {
+  overflow: hidden;
+}
+
+.agrova-overflow-auto {
+  overflow: auto;
+}
+
+.agrova-overflow-x-auto {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.agrova-overflow-y-auto {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+// ------------------------------------------------------------
+// CENTER CONTENT
+// ------------------------------------------------------------
+
+.agrova-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+// ------------------------------------------------------------
+// RESPONSIVE — MOBILE
+// ------------------------------------------------------------
+
+@media (max-width: 767px) {
+  .agrova-container,
+  .agrova-container-narrow,
+  .agrova-container-wide,
+  .agrova-container-fluid {
+    padding-inline: var(--agrova-space-4);
+  }
+
+  .agrova-section {
+    padding-block: var(--agrova-space-8);
+  }
+
+  .agrova-section-large {
+    padding-block: var(--agrova-space-10);
+  }
+
+  .agrova-grid-2,
+  .agrova-grid-3,
+  .agrova-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .agrova-row-responsive {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+// ------------------------------------------------------------
+// RESPONSIVE — TABLET
+// ------------------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .agrova-container,
+  .agrova-container-narrow,
+  .agrova-container-wide,
+  .agrova-container-fluid {
+    padding-inline: var(--agrova-space-5);
+  }
+
+  .agrova-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+// ------------------------------------------------------------
+// RESPONSIVE — LAPTOP
+// ------------------------------------------------------------
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .agrova-grid-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+// ------------------------------------------------------------
+// RESPONSIVE — LARGE DESKTOP
+// ------------------------------------------------------------
+
+@media (min-width: 1440px) {
+  .agrova-container {
+    max-width: 1440px;
+  }
+
+  .agrova-container-wide {
+    max-width: 1680px;
+  }
+}
+
+
+// ------------------------------------------------------------
+// SAFE AREA SUPPORT
+// Mobile devices with display cutouts / rounded corners.
+// ------------------------------------------------------------
+
+.agrova-safe-area {
+  padding-top: max(
+    var(--agrova-space-4),
+    env(safe-area-inset-top)
+  );
+
+  padding-right: max(
+    var(--agrova-space-4),
+    env(safe-area-inset-right)
+  );
+
+  padding-bottom: max(
+    var(--agrova-space-4),
+    env(safe-area-inset-bottom)
+  );
+
+  padding-left: max(
+    var(--agrova-space-4),
+    env(safe-area-inset-left)
+  );
+}
+
+
+// ------------------------------------------------------------
+// CONTENT WIDTH PROTECTION
+// Prevent long text/content from breaking layouts.
+// ------------------------------------------------------------
+
+.agrova-content {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+
+// ------------------------------------------------------------
+// VISUALLY HIDDEN LAYOUT ELEMENT
+// ------------------------------------------------------------
+
+.agrova-collapse-mobile {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .agrova-collapse-mobile {
+    display: none !important;
+  }
+}

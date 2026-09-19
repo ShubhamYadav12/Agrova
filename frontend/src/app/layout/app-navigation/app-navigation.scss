@@ -1,0 +1,284 @@
+.agrova-nav {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 100;
+    display: flex;
+    width: 270px;
+    padding: 22px 16px 16px;
+    border-right: 1px solid #dce8df;
+    background: #f8fbf8;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.agrova-nav__brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 0 8px;
+}
+
+.agrova-nav__logo {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 12px;
+    background: #173d2a;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.agrova-nav__brand strong,
+.agrova-nav__brand span {
+    display: block;
+}
+
+.agrova-nav__brand strong {
+    color: #17251d;
+    font-size: 18px;
+}
+
+.agrova-nav__brand span {
+    margin-top: 2px;
+    color: #789083;
+    font-size: 11px;
+}
+
+.agrova-nav__farm {
+    margin: 26px 0 18px;
+}
+
+.agrova-nav__farm-label,
+.agrova-nav__group-label {
+    display: block;
+    padding: 0 10px;
+    color: #708478;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+}
+
+.agrova-nav__farm-switch {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px;
+    padding: 11px 10px;
+    border: 1px solid #dbe8df;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #17251d;
+    cursor: pointer;
+    text-align: left;
+}
+
+.agrova-nav__farm-icon {
+    font-size: 20px;
+}
+
+.agrova-nav__farm-copy {
+    min-width: 0;
+    flex: 1;
+}
+
+.agrova-nav__farm-copy strong,
+.agrova-nav__farm-copy small {
+    display: block;
+}
+
+.agrova-nav__farm-copy strong {
+    font-size: 13px;
+}
+
+.agrova-nav__farm-copy small {
+    margin-top: 2px;
+    color: #819187;
+    font-size: 10px;
+}
+
+.agrova-nav__farm-arrow {
+    color: #7d8d84;
+    font-size: 16px;
+}
+
+.agrova-nav__menu {
+    min-height: 0;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.agrova-nav__group-label {
+    margin: 17px 0 6px;
+}
+
+.agrova-nav__group-label:first-child {
+    margin-top: 0;
+}
+
+.agrova-nav__item {
+    position: relative;
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+    gap: 11px;
+    margin: 2px 0;
+    padding: 8px 10px;
+    border-radius: 11px;
+    color: #50635a;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 140ms ease,
+        color 140ms ease,
+        transform 140ms ease;
+}
+
+.agrova-nav__item:hover {
+    background: #edf5ef;
+    color: #173d2a;
+    transform: translateX(2px);
+}
+
+.agrova-nav__item--active {
+    background: #e4f2e8;
+    color: #146c3a;
+}
+
+.agrova-nav__item--active::before {
+    position: absolute;
+    left: -16px;
+    width: 3px;
+    height: 24px;
+    border-radius: 0 4px 4px 0;
+    background: #29935d;
+    content: '';
+}
+
+.agrova-nav__icon {
+    display: grid;
+    width: 25px;
+    place-items: center;
+    font-size: 17px;
+}
+
+.agrova-nav__item-copy strong,
+.agrova-nav__item-copy small {
+    display: block;
+}
+
+.agrova-nav__item-copy small {
+    margin-top: 1px;
+    color: #769084;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.agrova-nav__item--intelligence {
+    border: 1px solid #dcebe1;
+    background: #ffffff;
+}
+
+.agrova-nav__item--intelligence:hover,
+.agrova-nav__item--intelligence.agrova-nav__item--active {
+    background: #e9f5ed;
+}
+
+.agrova-nav__bottom {
+    padding-top: 14px;
+    border-top: 1px solid #dce8df;
+}
+
+.agrova-nav__utility {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #dbe8df;
+    border-radius: 13px;
+    background: #ffffff;
+    color: #173d2a;
+    cursor: pointer;
+    text-align: left;
+}
+
+.agrova-nav__utility>span:first-child {
+    font-size: 18px;
+}
+
+.agrova-nav__utility strong,
+.agrova-nav__utility small {
+    display: block;
+}
+
+.agrova-nav__utility strong {
+    font-size: 12px;
+}
+
+.agrova-nav__utility small {
+    margin-top: 2px;
+    color: #7b8b82;
+    font-size: 10px;
+}
+
+.agrova-nav__profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+}
+
+.agrova-nav__avatar {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border-radius: 50%;
+    background: #e6f1e9;
+}
+
+.agrova-nav__profile strong,
+.agrova-nav__profile span {
+    display: block;
+}
+
+.agrova-nav__profile strong {
+    color: #25362d;
+    font-size: 12px;
+}
+
+.agrova-nav__profile span {
+    margin-top: 2px;
+    color: #819187;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+    .agrova-nav {
+        width: 230px;
+    }
+}
+
+@media (max-width: 700px) {
+    .agrova-nav {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid #dce8df;
+    }
+
+    .agrova-nav__menu {
+        overflow: visible;
+    }
+
+    .agrova-nav__bottom {
+        display: none;
+    }
+}

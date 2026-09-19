@@ -1,0 +1,162 @@
+<div class="harvest">
+    <header class="harvest__header">
+        <div>
+            <p class="harvest__eyebrow">KHET / HARVEST</p>
+            <h1>Record harvest</h1>
+            <p class="harvest__subtitle">
+                Record what was harvested so Agrova can connect the crop cycle
+                with
+                its actual production outcome.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Harvest record"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="harvest-context-title">
+        <agrova-card>
+            <div class="harvest__panel">
+                <div class="harvest__panel-header">
+                    <div>
+                        <p class="harvest__eyebrow">CROP CONTEXT</p>
+                        <h2 id="harvest-context-title">Harvested crop</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not recorded"
+                        variant="warning" />
+                </div>
+
+                <div class="harvest__summary">
+                    <div class="harvest__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="harvest__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="harvest__summary-item">
+                        <span>Variety</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="harvest__summary-item">
+                        <span>Sowing date</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="harvest-record-title">
+        <agrova-card>
+            <div class="harvest__panel">
+                <div class="harvest__panel-header">
+                    <div>
+                        <p class="harvest__eyebrow">HARVEST EVENT</p>
+                        <h2 id="harvest-record-title">Record the harvest</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer record"
+                        variant="success" />
+                </div>
+
+                <div class="harvest__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Harvest date"
+                        placeholder="DD / MM / YYYY" />
+
+                    <agrova-input
+                        label="Crop"
+                        placeholder="Example: Paddy" />
+
+                    <agrova-input
+                        label="Harvest area"
+                        placeholder="Enter harvested area" />
+                </div>
+
+                <div class="harvest__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save harvest
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="harvest-production-title">
+        <agrova-card>
+            <div class="harvest__panel">
+                <div class="harvest__panel-header">
+                    <div>
+                        <p class="harvest__eyebrow">PRODUCTION RECORD</p>
+                        <h2 id="harvest-production-title">Record what was
+                            produced</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Measured outcome"
+                        variant="info" />
+                </div>
+
+                <div class="harvest__form">
+                    <agrova-input
+                        label="Quantity harvested"
+                        placeholder="Enter harvested quantity" />
+
+                    <agrova-input
+                        label="Unit"
+                        placeholder="Example: kg, quintal" />
+                </div>
+
+                <div class="harvest__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save production
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="harvest-history-title">
+        <agrova-card>
+            <div class="harvest__panel harvest__history">
+                <div>
+                    <p class="harvest__eyebrow">HARVEST HISTORY</p>
+                    <h2 id="harvest-history-title">
+                        Harvest records remain part of farm memory
+                    </h2>
+                    <p>
+                        Previous harvests will remain connected to the field and
+                        crop
+                        history so Agrova can later understand production across
+                        seasons.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Historical record"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

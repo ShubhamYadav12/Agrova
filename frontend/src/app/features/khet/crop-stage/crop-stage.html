@@ -1,0 +1,115 @@
+<div class="crop-stage">
+    <header class="crop-stage__header">
+        <div>
+            <p class="crop-stage__eyebrow">KHET / CROP STAGE</p>
+            <h1>Crop stage</h1>
+            <p class="crop-stage__subtitle">
+                Keep the current growth stage of your crop up to date so Agrova
+                can
+                understand what the crop needs now.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Crop state"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="current-stage-title">
+        <agrova-card>
+            <div class="crop-stage__panel">
+                <div class="crop-stage__panel-header">
+                    <div>
+                        <p class="crop-stage__eyebrow">CURRENT CROP</p>
+                        <h2 id="current-stage-title">Current crop state</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not recorded"
+                        variant="warning" />
+                </div>
+
+                <div class="crop-stage__summary">
+                    <div class="crop-stage__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-stage__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-stage__summary-item">
+                        <span>Variety</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-stage__summary-item">
+                        <span>Sowing date</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="stage-record-title">
+        <agrova-card>
+            <div class="crop-stage__panel">
+                <div class="crop-stage__panel-header">
+                    <div>
+                        <p class="crop-stage__eyebrow">STAGE RECORD</p>
+                        <h2 id="stage-record-title">Record current stage</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer observation"
+                        variant="success" />
+                </div>
+
+                <div class="crop-stage__form">
+                    <agrova-input
+                        label="Crop stage"
+                        placeholder="Example: Seedling, Tillering, Flowering" />
+
+                    <agrova-input
+                        label="Observation date"
+                        placeholder="DD / MM / YYYY" />
+                </div>
+
+                <div class="crop-stage__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save stage
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="stage-history-title">
+        <agrova-card>
+            <div class="crop-stage__panel crop-stage__history">
+                <div>
+                    <p class="crop-stage__eyebrow">STAGE HISTORY</p>
+                    <h2 id="stage-history-title">Crop stages remain
+                        historical</h2>
+                    <p>
+                        Previous stage records will remain preserved so Agrova
+                        can
+                        understand how this crop progressed through its growing
+                        cycle.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Historical state"
+                    variant="info" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

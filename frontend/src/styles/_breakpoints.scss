@@ -1,0 +1,30 @@
+// ============================================================
+// AGROVA — RESPONSIVE BREAKPOINTS
+// Single source of truth for responsive layout thresholds.
+// ============================================================
+
+
+// ------------------------------------------------------------
+// WIDTH BREAKPOINTS
+// ------------------------------------------------------------
+
+// Small phones
+$agrova-mobile-sm: 360px;
+
+// Standard phones
+$agrova-mobile: 480px;
+
+// Tablets
+$agrova-tablet: 768px;
+
+// Large tablets / small laptops
+$agrova-tablet-lg: 1024px;
+
+// Laptops
+$agrova-laptop: 1280px;
+
+// Desktop
+$agrova-desktop: 1440px;
+
+// Wide desktop / large displays
+$agrova-wide: 1920px;

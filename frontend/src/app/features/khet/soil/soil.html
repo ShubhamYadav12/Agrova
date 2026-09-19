@@ -1,0 +1,125 @@
+<div class="soil">
+    <header class="soil__header">
+        <div>
+            <p class="soil__eyebrow">KHET / SOIL</p>
+            <h1>Soil profile</h1>
+            <p class="soil__subtitle">
+                Keep the known soil condition of each field connected to its
+                crop,
+                history and future recommendations.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Soil context"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="soil-overview-title">
+        <agrova-card>
+            <div class="soil__panel">
+                <div class="soil__panel-header">
+                    <div>
+                        <p class="soil__eyebrow">SOIL OVERVIEW</p>
+                        <h2 id="soil-overview-title">Field soil profile</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not recorded"
+                        variant="warning" />
+                </div>
+
+                <div class="soil__summary">
+                    <div class="soil__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="soil__summary-item">
+                        <span>Soil type</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="soil__summary-item">
+                        <span>pH</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="soil__summary-item">
+                        <span>Last tested</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="soil-profile-title">
+        <agrova-card>
+            <div class="soil__panel">
+                <div class="soil__panel-header">
+                    <div>
+                        <p class="soil__eyebrow">SOIL PROFILE</p>
+                        <h2 id="soil-profile-title">Record known soil
+                            information</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer / verified data"
+                        variant="success" />
+                </div>
+
+                <div class="soil__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Soil type"
+                        placeholder="Example: Loamy, Clay, Sandy" />
+
+                    <agrova-input
+                        label="Soil pH"
+                        placeholder="Enter pH if known" />
+
+                    <agrova-input
+                        label="Organic matter"
+                        placeholder="Enter value if known" />
+                </div>
+
+                <div class="soil__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save soil profile
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="soil-testing-title">
+        <agrova-card>
+            <div class="soil__panel soil__testing">
+                <div>
+                    <p class="soil__eyebrow">SOIL TESTING</p>
+                    <h2 id="soil-testing-title">Test results can be connected
+                        later</h2>
+                    <p>
+                        Laboratory reports, measured nutrients and other
+                        verified soil
+                        evidence will be stored separately from the basic field
+                        soil
+                        profile.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Diagnostic network"
+                    variant="info" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

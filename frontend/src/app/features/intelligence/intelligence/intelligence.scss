@@ -1,0 +1,340 @@
+.intelligence {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 0 64px;
+}
+
+.intelligence__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.intelligence__header h1 {
+    margin: 4px 0 8px;
+    color: #17251d;
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.intelligence__subtitle {
+    max-width: 850px;
+    margin: 0;
+    color: #607267;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intelligence__eyebrow {
+    margin: 0;
+    color: #5c7591;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.intelligence section {
+    margin-bottom: 24px;
+}
+
+.intelligence__panel {
+    padding: 4px;
+}
+
+.intelligence__section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.intelligence__section-header h2 {
+    margin: 4px 0 0;
+    color: #17251d;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.intelligence__section-description {
+    max-width: 850px;
+    margin: 8px 0 0;
+    color: #607267;
+    line-height: 1.6;
+}
+
+.intelligence__context-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.intelligence__context-card {
+    min-height: 190px;
+    padding: 20px;
+    border: 1px solid #e2ebe5;
+    border-radius: 16px;
+    background: #fbfdfb;
+}
+
+.intelligence__context-icon {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.intelligence__context-card h3 {
+    margin: 0 0 10px;
+    color: #17251d;
+    font-size: 18px;
+}
+
+.intelligence__context-card strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #17251d;
+    font-size: 24px;
+}
+
+.intelligence__context-card p {
+    margin: 0;
+    color: #607267;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.intelligence__pipeline {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.intelligence__pipeline-step {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 16px;
+    border: 1px solid #dbe9df;
+    border-radius: 16px;
+    background: #f7fbf8;
+}
+
+.intelligence__pipeline-step>span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+.intelligence__pipeline-step h3 {
+    margin: 0 0 7px;
+    color: #17251d;
+    font-size: 17px;
+}
+
+.intelligence__pipeline-step p {
+    margin: 0;
+    color: #607267;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.intelligence__arrow {
+    display: grid;
+    flex: 0 0 24px;
+    place-items: center;
+    color: #8a9a91;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.intelligence__gap-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.intelligence__gap-card {
+    min-height: 190px;
+    padding: 20px;
+    border: 1px solid #e2ebe5;
+    border-radius: 16px;
+    background: #fbfdfb;
+}
+
+.intelligence__gap-card>span {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 26px;
+}
+
+.intelligence__gap-card h3 {
+    margin: 0 0 8px;
+    color: #17251d;
+    font-size: 18px;
+}
+
+.intelligence__gap-card p {
+    margin: 0;
+    color: #607267;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.intelligence__empty {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    border: 1px solid #dbe9df;
+    border-radius: 16px;
+    background: #f7fbf8;
+}
+
+.intelligence__empty-icon {
+    flex-shrink: 0;
+    font-size: 32px;
+}
+
+.intelligence__empty h3 {
+    margin: 2px 0 8px;
+    color: #17251d;
+    font-size: 20px;
+}
+
+.intelligence__empty p {
+    max-width: 780px;
+    margin: 0;
+    color: #607267;
+    line-height: 1.6;
+}
+
+.intelligence__recommendation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.intelligence__recommendation-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid #e2ebe5;
+    border-radius: 16px;
+    background: #fbfdfb;
+}
+
+.intelligence__recommendation-step>span {
+    display: grid;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 50%;
+    background: #e8f4ec;
+    color: #198754;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.intelligence__recommendation-step h3 {
+    margin: 2px 0 7px;
+    color: #17251d;
+    font-size: 17px;
+}
+
+.intelligence__recommendation-step p {
+    margin: 0;
+    color: #607267;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.intelligence__memory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 4px;
+}
+
+.intelligence__memory h2 {
+    margin: 4px 0 8px;
+    color: #17251d;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.intelligence__memory p {
+    max-width: 850px;
+    margin: 0;
+    color: #607267;
+    line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+    .intelligence {
+        padding: 28px 20px 56px;
+    }
+
+    .intelligence__context-grid,
+    .intelligence__gap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .intelligence__pipeline {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .intelligence__arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .intelligence__header {
+        flex-direction: column;
+    }
+
+    .intelligence__header h1 {
+        font-size: 34px;
+    }
+
+    .intelligence__section-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .intelligence__recommendation {
+        grid-template-columns: 1fr;
+    }
+
+    .intelligence__empty {
+        flex-direction: column;
+    }
+
+    .intelligence__memory {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    .intelligence {
+        padding: 24px 16px 48px;
+    }
+
+    .intelligence__header h1 {
+        font-size: 30px;
+    }
+
+    .intelligence__context-grid,
+    .intelligence__gap-grid,
+    .intelligence__pipeline {
+        grid-template-columns: 1fr;
+    }
+}

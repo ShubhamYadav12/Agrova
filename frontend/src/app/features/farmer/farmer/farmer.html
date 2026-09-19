@@ -1,0 +1,73 @@
+<div class="farmer">
+    <header class="farmer__header">
+        <div>
+            <p class="farmer__eyebrow">FARMER PROFILE</p>
+            <h1>Your profile</h1>
+            <p class="farmer__subtitle">
+                Keep your Agrova profile information up to date.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Profile"
+            variant="info" />
+    </header>
+
+    <section
+        class="farmer__content"
+        aria-labelledby="profile-title">
+        <agrova-card>
+            <div class="farmer__panel">
+                <div class="farmer__panel-header">
+                    <div>
+                        <p class="farmer__eyebrow">YOUR INFORMATION</p>
+                        <h2 id="profile-title">Farmer profile</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not completed"
+                        variant="warning" />
+                </div>
+
+                <div class="farmer__form">
+                    <agrova-input
+                        label="Name"
+                        placeholder="Enter your name" />
+
+                    <agrova-input
+                        label="Phone number"
+                        placeholder="Enter your phone number" />
+                </div>
+
+                <div class="farmer__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save profile
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="identity-title">
+        <agrova-card>
+            <div class="farmer__panel farmer__identity">
+                <div>
+                    <p class="farmer__eyebrow">ACCOUNT IDENTITY</p>
+                    <h2 id="identity-title">Agrova account</h2>
+                    <p>
+                        Your farmer profile belongs to one canonical Agrova user
+                        identity.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Authenticated user"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

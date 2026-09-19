@@ -1,0 +1,210 @@
+<div class="dashboard">
+    <header class="dashboard__header">
+        <div>
+            <p class="dashboard__eyebrow">AGROVA</p>
+            <h1>Good morning, Farmer</h1>
+            <p class="dashboard__subtitle">
+                Here's what is happening on your farm today.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Farm overview"
+            variant="info" />
+    </header>
+
+    <!-- FARM SNAPSHOT -->
+    <section
+        class="dashboard__snapshot"
+        aria-labelledby="snapshot-title">
+        <div class="dashboard__section-heading">
+            <div>
+                <p class="dashboard__eyebrow">FARM SNAPSHOT</p>
+                <h2 id="snapshot-title">Your farm at a glance</h2>
+            </div>
+        </div>
+
+        <div class="dashboard__stats">
+            <agrova-card>
+                <div class="dashboard__stat">
+                    <span class="dashboard__stat-label">Animals</span>
+                    <strong class="dashboard__stat-value">—</strong>
+                    <span class="dashboard__stat-meta">No animal data yet</span>
+                </div>
+            </agrova-card>
+
+            <agrova-card>
+                <div class="dashboard__stat">
+                    <span class="dashboard__stat-label">Fields</span>
+                    <strong class="dashboard__stat-value">—</strong>
+                    <span class="dashboard__stat-meta">No field data yet</span>
+                </div>
+            </agrova-card>
+
+            <agrova-card>
+                <div class="dashboard__stat">
+                    <span class="dashboard__stat-label">Tasks</span>
+                    <strong class="dashboard__stat-value">0</strong>
+                    <span class="dashboard__stat-meta">No tasks today</span>
+                </div>
+            </agrova-card>
+
+            <agrova-card>
+                <div class="dashboard__stat">
+                    <span class="dashboard__stat-label">Weather</span>
+                    <strong class="dashboard__stat-value">—</strong>
+                    <span class="dashboard__stat-meta">Weather not
+                        connected</span>
+                </div>
+            </agrova-card>
+        </div>
+    </section>
+
+    <!-- TODAY -->
+    <section
+        class="dashboard__grid"
+        aria-label="Farm priorities and activity">
+        <agrova-card>
+            <div class="dashboard__panel">
+                <div class="dashboard__panel-header">
+                    <div>
+                        <p class="dashboard__eyebrow">TODAY</p>
+                        <h2>Today's priorities</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="No priorities"
+                        variant="default" />
+                </div>
+
+                <div class="dashboard__panel-body">
+                    <p>
+                        Agrova will surface the things that need your attention
+                        here.
+                    </p>
+                </div>
+
+                <div class="dashboard__panel-action">
+                    <a
+                        routerLink="/tasks"
+                        class="dashboard__link">
+                        View farm tasks →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+
+        <agrova-card>
+            <div class="dashboard__panel">
+                <div class="dashboard__panel-header">
+                    <div>
+                        <p class="dashboard__eyebrow">ACTIVITY</p>
+                        <h2>Recent activity</h2>
+                    </div>
+                </div>
+
+                <div class="dashboard__panel-body">
+                    <p>
+                        Your recent farm activities will appear here.
+                    </p>
+                </div>
+
+                <div class="dashboard__panel-action">
+                    <a
+                        routerLink="/activities"
+                        class="dashboard__link">
+                        View farm activity →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FARM CONTEXT -->
+    <section aria-labelledby="context-title">
+        <agrova-card>
+            <div class="dashboard__panel">
+                <div class="dashboard__panel-header">
+                    <div>
+                        <p class="dashboard__eyebrow">FARM CONTEXT</p>
+                        <h2 id="context-title">What Agrova knows about your
+                            farm</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Building context"
+                        variant="info" />
+                </div>
+
+                <div class="dashboard__context-grid">
+                    <div class="dashboard__context-item">
+                        <span>Fields & crops</span>
+                        <strong>—</strong>
+                        <small>Not registered</small>
+                    </div>
+
+                    <div class="dashboard__context-item">
+                        <span>Soil</span>
+                        <strong>—</strong>
+                        <small>Not recorded</small>
+                    </div>
+
+                    <div class="dashboard__context-item">
+                        <span>Water</span>
+                        <strong>—</strong>
+                        <small>Not recorded</small>
+                    </div>
+
+                    <div class="dashboard__context-item">
+                        <span>Weather</span>
+                        <strong>—</strong>
+                        <small>Not connected</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FARM STATUS -->
+    <section aria-labelledby="farm-status-title">
+        <agrova-card>
+            <div class="dashboard__panel">
+                <div class="dashboard__panel-header">
+                    <div>
+                        <p class="dashboard__eyebrow">FARM STATUS</p>
+                        <h2 id="farm-status-title">Start building your farm
+                            context</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Getting started"
+                        variant="info" />
+                </div>
+
+                <div class="dashboard__status">
+                    <div>
+                        <strong>
+                            Your farm context is not set up yet.
+                        </strong>
+
+                        <p>
+                            Register your farm, fields, animals and resources so
+                            Agrova
+                            can gradually understand what is happening on your
+                            farm.
+                        </p>
+                    </div>
+
+                    <button
+                        routerLink="/farm"
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Set up farm
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+</div>

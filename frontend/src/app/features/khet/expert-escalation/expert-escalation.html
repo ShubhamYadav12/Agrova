@@ -1,0 +1,163 @@
+<div class="expert-escalation">
+    <header class="expert-escalation__header">
+        <div>
+            <p class="expert-escalation__eyebrow">KHET / EXPERT</p>
+            <h1>Ask an expert</h1>
+            <p class="expert-escalation__subtitle">
+                Send a field observation and its evidence for professional
+                review
+                when you need help understanding what is happening.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Expert review"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="escalation-context-title">
+        <agrova-card>
+            <div class="expert-escalation__panel">
+                <div class="expert-escalation__panel-header">
+                    <div>
+                        <p class="expert-escalation__eyebrow">CASE CONTEXT</p>
+                        <h2 id="escalation-context-title">What needs
+                            attention?</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not submitted"
+                        variant="warning" />
+                </div>
+
+                <div class="expert-escalation__summary">
+                    <div class="expert-escalation__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="expert-escalation__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="expert-escalation__summary-item">
+                        <span>Observation</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="expert-escalation__summary-item">
+                        <span>Evidence</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="expert-request-title">
+        <agrova-card>
+            <div class="expert-escalation__panel">
+                <div class="expert-escalation__panel-header">
+                    <div>
+                        <p class="expert-escalation__eyebrow">EXPERT REQUEST</p>
+                        <h2 id="expert-request-title">Describe what you need
+                            help with</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer request"
+                        variant="success" />
+                </div>
+
+                <div class="expert-escalation__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Crop"
+                        placeholder="Select or enter crop" />
+
+                    <agrova-input
+                        label="Issue observed"
+                        placeholder="Example: Yellow leaves, pest, wilting" />
+
+                    <agrova-input
+                        label="Urgency"
+                        placeholder="Example: Normal, Soon, Urgent" />
+                </div>
+
+                <div class="expert-escalation__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Send for expert review
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="evidence-title">
+        <agrova-card>
+            <div class="expert-escalation__panel">
+                <div class="expert-escalation__panel-header">
+                    <div>
+                        <p class="expert-escalation__eyebrow">ATTACHED
+                            EVIDENCE</p>
+                        <h2 id="evidence-title">Evidence travels with the
+                            case</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Preserved"
+                        variant="info" />
+                </div>
+
+                <div class="expert-escalation__evidence">
+                    <div class="expert-escalation__evidence-item">
+                        <span>Field observation</span>
+                        <strong>Not attached</strong>
+                        <small>The original farmer observation remains
+                            unchanged.</small>
+                    </div>
+
+                    <div class="expert-escalation__evidence-item">
+                        <span>Crop photo</span>
+                        <strong>Not attached</strong>
+                        <small>Photos can provide visual evidence for expert
+                            review.</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="review-title">
+        <agrova-card>
+            <div class="expert-escalation__panel expert-escalation__review">
+                <div>
+                    <p class="expert-escalation__eyebrow">HUMAN IN THE LOOP</p>
+                    <h2 id="review-title">
+                        Expert assessment remains separate from the observation
+                    </h2>
+
+                    <p>
+                        Agrova will preserve what the farmer reported, then
+                        connect the
+                        professional assessment to that evidence. The assessment
+                        does not
+                        overwrite the original observation.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Professional assessment"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

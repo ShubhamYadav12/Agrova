@@ -1,0 +1,160 @@
+<div class="yield">
+    <header class="yield__header">
+        <div>
+            <p class="yield__eyebrow">KHET / YIELD</p>
+            <h1>Record yield</h1>
+            <p class="yield__subtitle">
+                Capture the actual production from a crop cycle so Agrova can
+                learn
+                from what happened on this particular field.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Yield record"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="yield-context-title">
+        <agrova-card>
+            <div class="yield__panel">
+                <div class="yield__panel-header">
+                    <div>
+                        <p class="yield__eyebrow">CROP CONTEXT</p>
+                        <h2 id="yield-context-title">Production context</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not recorded"
+                        variant="warning" />
+                </div>
+
+                <div class="yield__summary">
+                    <div class="yield__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="yield__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="yield__summary-item">
+                        <span>Variety</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="yield__summary-item">
+                        <span>Area</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="yield-record-title">
+        <agrova-card>
+            <div class="yield__panel">
+                <div class="yield__panel-header">
+                    <div>
+                        <p class="yield__eyebrow">YIELD OUTCOME</p>
+                        <h2 id="yield-record-title">Record actual
+                            production</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Measured outcome"
+                        variant="success" />
+                </div>
+
+                <div class="yield__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Crop"
+                        placeholder="Example: Paddy" />
+
+                    <agrova-input
+                        label="Yield quantity"
+                        placeholder="Enter actual yield" />
+
+                    <agrova-input
+                        label="Unit"
+                        placeholder="Example: quintal, kg" />
+                </div>
+
+                <div class="yield__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save yield
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="yield-normalized-title">
+        <agrova-card>
+            <div class="yield__panel">
+                <div class="yield__panel-header">
+                    <div>
+                        <p class="yield__eyebrow">STANDARDIZED RECORD</p>
+                        <h2 id="yield-normalized-title">Keep the original and
+                            standard value</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm memory"
+                        variant="info" />
+                </div>
+
+                <div class="yield__form">
+                    <agrova-input
+                        label="Original quantity"
+                        placeholder="Keep the farmer's recorded value" />
+
+                    <agrova-input
+                        label="Standard unit"
+                        placeholder="Example: kg or quintal" />
+                </div>
+
+                <p class="yield__note">
+                    Agrova should preserve the original value and unit instead
+                    of
+                    silently replacing the farmer's record.
+                </p>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="yield-history-title">
+        <agrova-card>
+            <div class="yield__panel yield__history">
+                <div>
+                    <p class="yield__eyebrow">YIELD HISTORY</p>
+                    <h2 id="yield-history-title">
+                        Every yield becomes part of farm memory
+                    </h2>
+                    <p>
+                        Previous yield records will remain connected to the
+                        field, crop,
+                        variety and season so Agrova can compare what actually
+                        happened
+                        across crop cycles.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Historical record"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

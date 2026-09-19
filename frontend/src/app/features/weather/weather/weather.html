@@ -1,0 +1,367 @@
+<div class="weather">
+    <header class="weather__header">
+        <div>
+            <p class="weather__eyebrow">FARM / WEATHER</p>
+
+            <h1>☀️ Weather</h1>
+
+            <p class="weather__subtitle">
+                Understand the weather around the farm and keep changing
+                conditions connected to field, crop, water and farm decisions.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Farm conditions"
+            variant="info" />
+    </header>
+
+    <!-- CURRENT CONDITIONS -->
+    <section aria-labelledby="current-title">
+        <agrova-card>
+            <div class="weather__panel">
+                <div class="weather__section-header">
+                    <div>
+                        <p class="weather__eyebrow">CURRENT CONDITIONS</p>
+
+                        <h2 id="current-title">
+                            What is happening around the farm?
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="No weather data yet"
+                        variant="warning" />
+                </div>
+
+                <div class="weather__current">
+                    <div class="weather__location">
+                        <span class="weather__location-icon">📍</span>
+
+                        <div>
+                            <span class="weather__label">Farm location</span>
+
+                            <strong>Not connected yet</strong>
+
+                            <small>
+                                Weather will be linked to the farm's saved
+                                location.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="weather__current-grid">
+                        <div class="weather__metric">
+                            <span>Temperature</span>
+                            <strong>—</strong>
+                            <small>No current reading</small>
+                        </div>
+
+                        <div class="weather__metric">
+                            <span>Rain</span>
+                            <strong>—</strong>
+                            <small>No current reading</small>
+                        </div>
+
+                        <div class="weather__metric">
+                            <span>Humidity</span>
+                            <strong>—</strong>
+                            <small>No current reading</small>
+                        </div>
+
+                        <div class="weather__metric">
+                            <span>Wind</span>
+                            <strong>—</strong>
+                            <small>No current reading</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FORECAST -->
+    <section aria-labelledby="forecast-title">
+        <agrova-card>
+            <div class="weather__panel">
+                <div class="weather__section-header">
+                    <div>
+                        <p class="weather__eyebrow">FORECAST</p>
+
+                        <h2 id="forecast-title">
+                            🌦️ What may happen next?
+                        </h2>
+
+                        <p class="weather__section-description">
+                            Forecast information will eventually provide a short
+                            window into upcoming conditions around the farm.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Coming from weather service"
+                        variant="info" />
+                </div>
+
+                <div class="weather__forecast">
+                    <div class="weather__forecast-day">
+                        <span class="weather__forecast-icon">☀️</span>
+
+                        <strong>Today</strong>
+
+                        <span>—</span>
+
+                        <small>No forecast available</small>
+                    </div>
+
+                    <div class="weather__forecast-day">
+                        <span class="weather__forecast-icon">🌤️</span>
+
+                        <strong>Tomorrow</strong>
+
+                        <span>—</span>
+
+                        <small>No forecast available</small>
+                    </div>
+
+                    <div class="weather__forecast-day">
+                        <span class="weather__forecast-icon">🌧️</span>
+
+                        <strong>Day 3</strong>
+
+                        <span>—</span>
+
+                        <small>No forecast available</small>
+                    </div>
+
+                    <div class="weather__forecast-day">
+                        <span class="weather__forecast-icon">🌦️</span>
+
+                        <strong>Day 4</strong>
+
+                        <span>—</span>
+
+                        <small>No forecast available</small>
+                    </div>
+
+                    <div class="weather__forecast-day">
+                        <span class="weather__forecast-icon">☁️</span>
+
+                        <strong>Day 5</strong>
+
+                        <span>—</span>
+
+                        <small>No forecast available</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FARM CONNECTION -->
+    <section aria-labelledby="connection-title">
+        <agrova-card>
+            <div class="weather__panel">
+                <div class="weather__section-header">
+                    <div>
+                        <p class="weather__eyebrow">FARM CONTEXT</p>
+
+                        <h2 id="connection-title">
+                            🌾 Weather should understand the farm
+                        </h2>
+
+                        <p class="weather__section-description">
+                            Weather becomes useful when it is connected to the
+                            particular field, crop, crop stage, water situation
+                            and
+                            activities happening on the farm.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm intelligence foundation"
+                        variant="success" />
+                </div>
+
+                <div class="weather__context-grid">
+                    <div class="weather__context-card">
+                        <span class="weather__context-icon">🌾</span>
+
+                        <h3>Field</h3>
+
+                        <p>
+                            Connect weather conditions to the actual field where
+                            farming work is happening.
+                        </p>
+                    </div>
+
+                    <div class="weather__context-card">
+                        <span class="weather__context-icon">🌱</span>
+
+                        <h3>Crop stage</h3>
+
+                        <p>
+                            The same weather can matter differently depending on
+                            what the crop is currently going through.
+                        </p>
+                    </div>
+
+                    <div class="weather__context-card">
+                        <span class="weather__context-icon">💧</span>
+
+                        <h3>Water</h3>
+
+                        <p>
+                            Rain and water availability can eventually be
+                            understood
+                            together instead of separately.
+                        </p>
+                    </div>
+
+                    <div class="weather__context-card">
+                        <span class="weather__context-icon">🚜</span>
+
+                        <h3>Activities</h3>
+
+                        <p>
+                            Weather can become part of the context around
+                            planned
+                            and completed farm activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- AGRICULTURAL RELEVANCE -->
+    <section aria-labelledby="agri-title">
+        <agrova-card>
+            <div class="weather__panel">
+                <div class="weather__section-header">
+                    <div>
+                        <p class="weather__eyebrow">AGRICULTURAL RELEVANCE</p>
+
+                        <h2 id="agri-title">
+                            🌱 Weather is more than a number
+                        </h2>
+
+                        <p class="weather__section-description">
+                            Agrova should eventually translate weather into
+                            farmer-relevant context rather than simply
+                            displaying
+                            raw weather values.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Future intelligence"
+                        variant="warning" />
+                </div>
+
+                <div class="weather__relevance">
+                    <div class="weather__relevance-card">
+                        <span>🌧️</span>
+
+                        <h3>Rain window</h3>
+
+                        <p>
+                            Understand upcoming rainfall alongside field and
+                            crop
+                            conditions.
+                        </p>
+                    </div>
+
+                    <div class="weather__relevance-card">
+                        <span>🌡️</span>
+
+                        <h3>Temperature</h3>
+
+                        <p>
+                            Keep temperature history connected to crop and
+                            seasonal
+                            context.
+                        </p>
+                    </div>
+
+                    <div class="weather__relevance-card">
+                        <span>💧</span>
+
+                        <h3>Water planning</h3>
+
+                        <p>
+                            Eventually consider rainfall together with
+                            irrigation and
+                            water availability.
+                        </p>
+                    </div>
+
+                    <div class="weather__relevance-card">
+                        <span>⚠️</span>
+
+                        <h3>Weather risk</h3>
+
+                        <p>
+                            Surface relevant weather conditions when they may
+                            affect
+                            farm decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- DATA SOURCE -->
+    <section aria-labelledby="source-title">
+        <agrova-card>
+            <div class="weather__source">
+                <div>
+                    <p class="weather__eyebrow">WEATHER DATA</p>
+
+                    <h2 id="source-title">
+                        Trusted weather data stays identifiable
+                    </h2>
+
+                    <p>
+                        Agrova will keep the weather provider, observation time
+                        and
+                        relevant source information connected to the weather
+                        data
+                        it uses.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Source-aware"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- MEMORY -->
+    <section aria-labelledby="memory-title">
+        <agrova-card>
+            <div class="weather__memory">
+                <div>
+                    <p class="weather__eyebrow">WEATHER MEMORY</p>
+
+                    <h2 id="memory-title">
+                        Weather becomes part of farm memory
+                    </h2>
+
+                    <p>
+                        Agrova will eventually connect weather history with crop
+                        stages, activities, water, observations, yield and
+                        outcomes
+                        so the farm can learn from what actually happened.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Connected history"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

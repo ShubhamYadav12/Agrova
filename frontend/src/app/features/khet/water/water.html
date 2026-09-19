@@ -1,0 +1,171 @@
+<div class="water">
+    <header class="water__header">
+        <div>
+            <p class="water__eyebrow">KHET / WATER</p>
+            <h1>Water & irrigation</h1>
+            <p class="water__subtitle">
+                Keep each field's water source and irrigation history connected
+                to its
+                crop and growing conditions.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Water context"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="water-overview-title">
+        <agrova-card>
+            <div class="water__panel">
+                <div class="water__panel-header">
+                    <div>
+                        <p class="water__eyebrow">WATER OVERVIEW</p>
+                        <h2 id="water-overview-title">Field water status</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not recorded"
+                        variant="warning" />
+                </div>
+
+                <div class="water__summary">
+                    <div class="water__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="water__summary-item">
+                        <span>Water source</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="water__summary-item">
+                        <span>Irrigation source</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="water__summary-item">
+                        <span>Last irrigation</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="water-source-title">
+        <agrova-card>
+            <div class="water__panel">
+                <div class="water__panel-header">
+                    <div>
+                        <p class="water__eyebrow">WATER SOURCE</p>
+                        <h2 id="water-source-title">Record field water
+                            source</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm resource"
+                        variant="success" />
+                </div>
+
+                <div class="water__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Water source"
+                        placeholder="Example: Well, Tube well, Canal, Pond" />
+
+                    <agrova-input
+                        label="Irrigation source"
+                        placeholder="Example: Pump, Canal, Drip" />
+
+                    <agrova-input
+                        label="Water availability"
+                        placeholder="Enter availability if known" />
+                </div>
+
+                <div class="water__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save water source
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="irrigation-title">
+        <agrova-card>
+            <div class="water__panel">
+                <div class="water__panel-header">
+                    <div>
+                        <p class="water__eyebrow">IRRIGATION EVENT</p>
+                        <h2 id="irrigation-title">Record irrigation</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer observation"
+                        variant="info" />
+                </div>
+
+                <div class="water__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Irrigation date"
+                        placeholder="DD / MM / YYYY" />
+
+                    <agrova-input
+                        label="Irrigation source"
+                        placeholder="Select irrigation source" />
+
+                    <agrova-input
+                        label="Notes"
+                        placeholder="Enter irrigation details if known" />
+                </div>
+
+                <div class="water__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save irrigation
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="water-context-title">
+        <agrova-card>
+            <div class="water__panel water__context">
+                <div>
+                    <p class="water__eyebrow">WATER CONTEXT</p>
+                    <h2 id="water-context-title">
+                        Irrigation becomes part of field history
+                    </h2>
+                    <p>
+                        Irrigation events will remain connected to the field and
+                        crop so
+                        Agrova can later understand water conditions alongside
+                        weather,
+                        soil, crop stage and yield.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Field-level history"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

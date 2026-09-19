@@ -1,0 +1,202 @@
+<div class="crop-health">
+    <header class="crop-health__header">
+        <div>
+            <p class="crop-health__eyebrow">KHET / CROP HEALTH</p>
+            <h1>Crop health</h1>
+            <p class="crop-health__subtitle">
+                Tell Agrova what you are seeing in the field so observations can
+                stay
+                connected to the crop and its history.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Field observation"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="health-overview-title">
+        <agrova-card>
+            <div class="crop-health__panel">
+                <div class="crop-health__panel-header">
+                    <div>
+                        <p class="crop-health__eyebrow">CROP HEALTH OVERVIEW</p>
+                        <h2 id="health-overview-title">Current field
+                            condition</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="No observations"
+                        variant="warning" />
+                </div>
+
+                <div class="crop-health__summary">
+                    <div class="crop-health__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-health__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-health__summary-item">
+                        <span>Last observation</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-health__summary-item">
+                        <span>Attention</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="observation-title">
+        <agrova-card>
+            <div class="crop-health__panel">
+                <div class="crop-health__panel-header">
+                    <div>
+                        <p class="crop-health__eyebrow">FIELD OBSERVATION</p>
+                        <h2 id="observation-title">Record what you see</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer observation"
+                        variant="success" />
+                </div>
+
+                <div class="crop-health__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Observation date"
+                        placeholder="DD / MM / YYYY" />
+
+                    <agrova-input
+                        label="Observation type"
+                        placeholder="Example: Pest, Disease, Leaf symptom" />
+
+                    <agrova-input
+                        label="Crop area affected"
+                        placeholder="Example: Small patch, Half field" />
+                </div>
+
+                <div class="crop-health__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save observation
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="pest-title">
+        <agrova-card>
+            <div class="crop-health__panel">
+                <div class="crop-health__panel-header">
+                    <div>
+                        <p class="crop-health__eyebrow">PEST OBSERVATION</p>
+                        <h2 id="pest-title">Record a pest observation</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Observed"
+                        variant="info" />
+                </div>
+
+                <div class="crop-health__form">
+                    <agrova-input
+                        label="Pest name"
+                        placeholder="Enter pest name if known" />
+
+                    <agrova-input
+                        label="Affected crop part"
+                        placeholder="Example: Leaf, Stem, Root, Fruit" />
+                </div>
+
+                <div class="crop-health__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save pest observation
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="disease-title">
+        <agrova-card>
+            <div class="crop-health__panel">
+                <div class="crop-health__panel-header">
+                    <div>
+                        <p class="crop-health__eyebrow">DISEASE / SYMPTOM</p>
+                        <h2 id="disease-title">Record crop symptoms</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Observation only"
+                        variant="warning" />
+                </div>
+
+                <div class="crop-health__form">
+                    <agrova-input
+                        label="Visible symptom"
+                        placeholder="Example: Yellow leaves, Spots, Wilting" />
+
+                    <agrova-input
+                        label="Affected crop part"
+                        placeholder="Example: Leaf, Stem, Root, Fruit" />
+                </div>
+
+                <div class="crop-health__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save symptom
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="health-safety-title">
+        <agrova-card>
+            <div class="crop-health__panel crop-health__safety">
+                <div>
+                    <p class="crop-health__eyebrow">AGROVA APPROACH</p>
+                    <h2 id="health-safety-title">
+                        Observation comes before diagnosis
+                    </h2>
+                    <p>
+                        Farmer observations will remain separate from
+                        professional
+                        assessments and AI interpretation. Later, photos, expert
+                        review,
+                        weather and other evidence can be connected without
+                        replacing the
+                        original observation.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Evidence first"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

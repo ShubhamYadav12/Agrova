@@ -1,0 +1,72 @@
+@use '../../../../../styles/motion' as motion;
+
+.agrova-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  color: #5f6b61;
+
+  &--fullscreen {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+  }
+
+  &__spinner {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    border: 3px solid #dfe5df;
+    border-top-color: #4f6f52;
+    border-radius: 50%;
+
+    animation:
+      agrova-loading-spin
+      motion.$agrova-duration-slow
+      linear
+      infinite;
+  }
+
+  &__label {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  &--sm {
+    .agrova-loading__spinner {
+      width: 16px;
+      height: 16px;
+      border-width: 2px;
+    }
+  }
+
+  &--md {
+    .agrova-loading__spinner {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--lg {
+    .agrova-loading__spinner {
+      width: 36px;
+      height: 36px;
+      border-width: 4px;
+    }
+  }
+}
+
+@keyframes agrova-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

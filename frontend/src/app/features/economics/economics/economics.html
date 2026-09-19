@@ -1,0 +1,203 @@
+<div class="economics">
+    <header class="economics__header">
+        <div>
+            <p class="economics__eyebrow">FARM / ECONOMICS</p>
+            <h1>Farm economics</h1>
+            <p class="economics__subtitle">
+                Connect what the farmer spends and earns with the crop, field
+                and
+                actual production outcome.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Farm economics"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="economics-context-title">
+        <agrova-card>
+            <div class="economics__panel">
+                <div class="economics__panel-header">
+                    <div>
+                        <p class="economics__eyebrow">CROP CONTEXT</p>
+                        <h2 id="economics-context-title">Economic context</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Not recorded"
+                        variant="warning" />
+                </div>
+
+                <div class="economics__summary">
+                    <div class="economics__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="economics__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="economics__summary-item">
+                        <span>Area</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="economics__summary-item">
+                        <span>Yield</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="input-cost-title">
+        <agrova-card>
+            <div class="economics__panel">
+                <div class="economics__panel-header">
+                    <div>
+                        <p class="economics__eyebrow">INPUT COST</p>
+                        <h2 id="input-cost-title">Record what was spent</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer record"
+                        variant="success" />
+                </div>
+
+                <div class="economics__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Crop"
+                        placeholder="Example: Paddy" />
+
+                    <agrova-input
+                        label="Input / expense"
+                        placeholder="Example: Seed, fertilizer, labour" />
+
+                    <agrova-input
+                        label="Amount"
+                        placeholder="Enter amount" />
+                </div>
+
+                <div class="economics__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save expense
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="revenue-title">
+        <agrova-card>
+            <div class="economics__panel">
+                <div class="economics__panel-header">
+                    <div>
+                        <p class="economics__eyebrow">REVENUE</p>
+                        <h2 id="revenue-title">Record what was earned</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer record"
+                        variant="success" />
+                </div>
+
+                <div class="economics__form">
+                    <agrova-input
+                        label="Quantity sold"
+                        placeholder="Enter quantity sold" />
+
+                    <agrova-input
+                        label="Unit"
+                        placeholder="Example: kg, quintal" />
+
+                    <agrova-input
+                        label="Sale price"
+                        placeholder="Enter price" />
+
+                    <agrova-input
+                        label="Total sale value"
+                        placeholder="Enter total value if known" />
+                </div>
+
+                <div class="economics__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save sale
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="outcome-title">
+        <agrova-card>
+            <div class="economics__panel economics__outcome">
+                <div>
+                    <p class="economics__eyebrow">FARM OUTCOME</p>
+                    <h2 id="outcome-title">Economic outcome</h2>
+                    <p>
+                        Agrova will later connect recorded costs, production and
+                        revenue
+                        to understand the economic outcome of this crop cycle.
+                    </p>
+                </div>
+
+                <div class="economics__outcome-grid">
+                    <div>
+                        <span>Total cost</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div>
+                        <span>Revenue</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div>
+                        <span>Net outcome</span>
+                        <strong>—</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="economics-memory-title">
+        <agrova-card>
+            <div class="economics__panel economics__history">
+                <div>
+                    <p class="economics__eyebrow">FARM MEMORY</p>
+                    <h2 id="economics-memory-title">
+                        Economic history stays connected
+                    </h2>
+                    <p>
+                        Previous crop costs, yields and sales will remain part
+                        of farm
+                        history so Agrova can understand how farming outcomes
+                        change
+                        across seasons.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Historical record"
+                    variant="info" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

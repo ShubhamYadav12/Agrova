@@ -1,0 +1,23 @@
+@use '../../../../../styles/tokens' as tokens;
+@use '../../../../../styles/motion' as motion;
+
+:host {
+  display: block;
+}
+
+.agrova-card {
+  display: block;
+
+  padding: var(--agrova-space-6);
+
+  background: var(--agrova-surface);
+  border: 1px solid var(--agrova-border);
+  border-radius: var(--agrova-radius-lg);
+  box-shadow: var(--agrova-shadow-sm);
+
+  @include motion.agrova-transition;
+
+  &:hover {
+    box-shadow: var(--agrova-shadow-md);
+  }
+}

@@ -1,0 +1,265 @@
+<div class="pashu">
+    <header class="pashu__header">
+        <div>
+            <p class="pashu__eyebrow">FARM / PASHU</p>
+
+            <h1>🐄 Pashu</h1>
+
+            <p class="pashu__subtitle">
+                Keep every animal's identity, health, care and history connected
+                to your farm.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Animal care"
+            variant="success" />
+    </header>
+
+    <!-- PASHU OVERVIEW -->
+    <section aria-labelledby="overview-title">
+        <agrova-card>
+            <div class="pashu__panel">
+                <div class="pashu__section-header">
+                    <div>
+                        <p class="pashu__eyebrow">PASHU OVERVIEW</p>
+
+                        <h2 id="overview-title">
+                            Your animals stay connected
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm memory"
+                        variant="info" />
+                </div>
+
+                <div class="pashu__overview">
+                    <div class="pashu__overview-item">
+                        <span>Animals</span>
+                        <strong>—</strong>
+                        <small>No animals registered yet</small>
+                    </div>
+
+                    <div class="pashu__overview-item">
+                        <span>Health</span>
+                        <strong>—</strong>
+                        <small>No health records yet</small>
+                    </div>
+
+                    <div class="pashu__overview-item">
+                        <span>Vaccination</span>
+                        <strong>—</strong>
+                        <small>No vaccination records yet</small>
+                    </div>
+
+                    <div class="pashu__overview-item">
+                        <span>Milk</span>
+                        <strong>—</strong>
+                        <small>No milk records yet</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- ANIMALS -->
+    <section aria-labelledby="animals-title">
+        <agrova-card>
+            <div class="pashu__panel">
+                <div class="pashu__section-header">
+                    <div>
+                        <p class="pashu__eyebrow">ANIMAL IDENTITY</p>
+
+                        <h2 id="animals-title">
+                            🐄 Know each animal
+                        </h2>
+
+                        <p class="pashu__section-description">
+                            Create one connected profile for every animal so its
+                            health, care, productivity and history stay
+                            together.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Available"
+                        variant="success" />
+                </div>
+
+                <div class="pashu__feature-row">
+                    <div>
+                        <h3>Animal profiles</h3>
+
+                        <p>
+                            Record name, type, breed, sex, age and
+                            identification
+                            details for each animal.
+                        </p>
+                    </div>
+
+                    <a
+                        routerLink="/pashu/animal/new"
+                        class="pashu__link">
+                        Add animal →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- HEALTH -->
+    <section aria-labelledby="health-title">
+        <agrova-card>
+            <div class="pashu__panel">
+                <div class="pashu__section-header">
+                    <div>
+                        <p class="pashu__eyebrow">HEALTH & CARE</p>
+
+                        <h2 id="health-title">
+                            🩺 Record what you see
+                        </h2>
+
+                        <p class="pashu__section-description">
+                            Keep farmer observations, care records and future
+                            veterinary assessments connected to the animal.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Available"
+                        variant="success" />
+                </div>
+
+                <div class="pashu__feature-row">
+                    <div>
+                        <h3>Animal health</h3>
+
+                        <p>
+                            Record symptoms, observations, treatment and care
+                            without
+                            losing the original farmer observation.
+                        </p>
+                    </div>
+
+                    <a
+                        routerLink="/pashu/health"
+                        class="pashu__link">
+                        Open health records →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- CARE AREAS -->
+    <section aria-labelledby="care-title">
+        <agrova-card>
+            <div class="pashu__panel">
+                <div class="pashu__section-header">
+                    <div>
+                        <p class="pashu__eyebrow">ANIMAL CARE</p>
+
+                        <h2 id="care-title">
+                            🌿 More of the animal's life will stay connected
+                        </h2>
+
+                        <p class="pashu__section-description">
+                            Agrova will gradually connect preventive care,
+                            nutrition, productivity and reproduction with the
+                            same
+                            animal identity.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Coming next"
+                        variant="warning" />
+                </div>
+
+                <div class="pashu__care-grid">
+                    <div class="pashu__care-card">
+                        <span class="pashu__care-icon">💉</span>
+
+                        <h3>Vaccination</h3>
+
+                        <p>
+                            Vaccination and preventive-care history.
+                        </p>
+
+                        <span class="pashu__coming-soon">
+                            Coming next
+                        </span>
+                    </div>
+
+                    <div class="pashu__care-card">
+                        <span class="pashu__care-icon">🌿</span>
+
+                        <h3>Feed</h3>
+
+                        <p>
+                            Feed, nutrition and fodder records.
+                        </p>
+
+                        <span class="pashu__coming-soon">
+                            Coming next
+                        </span>
+                    </div>
+
+                    <div class="pashu__care-card">
+                        <span class="pashu__care-icon">🥛</span>
+
+                        <h3>Milk</h3>
+
+                        <p>
+                            Milk production and history.
+                        </p>
+
+                        <span class="pashu__coming-soon">
+                            Coming next
+                        </span>
+                    </div>
+
+                    <div class="pashu__care-card">
+                        <span class="pashu__care-icon">🐮</span>
+
+                        <h3>Breeding</h3>
+
+                        <p>
+                            Breeding and reproduction records.
+                        </p>
+
+                        <span class="pashu__coming-soon">
+                            Coming next
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- MEMORY -->
+    <section aria-labelledby="memory-title">
+        <agrova-card>
+            <div class="pashu__memory">
+                <div>
+                    <p class="pashu__eyebrow">PASHU MEMORY</p>
+
+                    <h2 id="memory-title">
+                        Every animal becomes part of farm memory
+                    </h2>
+
+                    <p>
+                        Agrova will keep identity, observations, health events,
+                        treatments, preventive care, productivity and outcomes
+                        connected over time.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Connected history"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

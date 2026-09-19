@@ -1,0 +1,86 @@
+// ============================================================
+// AGROVA — RESPONSIVE FOUNDATION
+// Global responsive helpers for the entire application.
+// ============================================================
+
+@use './breakpoints' as bp;
+
+
+// ------------------------------------------------------------
+// MOBILE
+// ------------------------------------------------------------
+
+@mixin agrova-mobile {
+  @media (max-width: #{bp.$agrova-tablet - 1px}) {
+    @content;
+  }
+}
+
+
+// ------------------------------------------------------------
+// TABLET
+// ------------------------------------------------------------
+
+@mixin agrova-tablet {
+  @media (min-width: bp.$agrova-tablet)
+    and (max-width: #{bp.$agrova-tablet-lg - 1px}) {
+    @content;
+  }
+}
+
+
+// ------------------------------------------------------------
+// LAPTOP
+// ------------------------------------------------------------
+
+@mixin agrova-laptop {
+  @media (min-width: bp.$agrova-tablet-lg)
+    and (max-width: #{bp.$agrova-laptop - 1px}) {
+    @content;
+  }
+}
+
+
+// ------------------------------------------------------------
+// DESKTOP
+// ------------------------------------------------------------
+
+@mixin agrova-desktop {
+  @media (min-width: bp.$agrova-laptop) {
+    @content;
+  }
+}
+
+
+// ------------------------------------------------------------
+// WIDE DESKTOP
+// ------------------------------------------------------------
+
+@mixin agrova-wide {
+  @media (min-width: bp.$agrova-wide) {
+    @content;
+  }
+}
+
+
+// ------------------------------------------------------------
+// TOUCH DEVICES
+// ------------------------------------------------------------
+
+@mixin agrova-touch {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+
+
+// ------------------------------------------------------------
+// REDUCED MOTION
+// Accessibility + performance.
+// ------------------------------------------------------------
+
+@mixin agrova-reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

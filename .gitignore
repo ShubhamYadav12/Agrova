@@ -1,56 +1,33 @@
-# =========================================
-# AGROVA - Git Ignore
-# =========================================
-
-# ---------- Environment / Secrets ----------
-.env
-.env.*
-!.env.example
-
-# ---------- Java / Spring Boot ----------
+HELP.md
 target/
-*.class
-*.jar
-*.war
-*.log
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# ---------- Node / Angular ----------
-node_modules/
-dist/
-.angular/
-.cache/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# ---------- IDE ----------
-.idea/
-.vscode/
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
+*.ipr
 
-# ---------- OS ----------
-.DS_Store
-Thumbs.db
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# ---------- Logs ----------
-logs/
-*.log
-
-# ---------- Local databases ----------
-*.db
-*.sqlite
-*.sqlite3
-
-# ---------- Certificates / Private Keys ----------
-*.pem
-*.key
-*.p12
-*.jks
-
-# ---------- Local uploads / runtime ----------
-uploads/
-storage/
-
-# ---------- AI local secrets ----------
-ai/secrets/
-
-# ---------- Temporary files ----------
-*.tmp
-*.temp
+### VS Code ###
+.vscode/

@@ -1,0 +1,162 @@
+<div class="crop-photo">
+    <header class="crop-photo__header">
+        <div>
+            <p class="crop-photo__eyebrow">KHET / CROP PHOTO</p>
+            <h1>Crop photo</h1>
+            <p class="crop-photo__subtitle">
+                Add a photo of what you are seeing so Agrova can keep visual
+                evidence
+                connected to the field and crop.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Visual evidence"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="photo-context-title">
+        <agrova-card>
+            <div class="crop-photo__panel">
+                <div class="crop-photo__panel-header">
+                    <div>
+                        <p class="crop-photo__eyebrow">PHOTO CONTEXT</p>
+                        <h2 id="photo-context-title">Connect the photo</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Field observation"
+                        variant="success" />
+                </div>
+
+                <div class="crop-photo__summary">
+                    <div class="crop-photo__summary-item">
+                        <span>Field</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-photo__summary-item">
+                        <span>Crop</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-photo__summary-item">
+                        <span>Observation date</span>
+                        <strong>—</strong>
+                    </div>
+
+                    <div class="crop-photo__summary-item">
+                        <span>Photo status</span>
+                        <strong>Not added</strong>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="photo-upload-title">
+        <agrova-card>
+            <div class="crop-photo__panel">
+                <div class="crop-photo__panel-header">
+                    <div>
+                        <p class="crop-photo__eyebrow">PHOTO OBSERVATION</p>
+                        <h2 id="photo-upload-title">Add field photo</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer-provided evidence"
+                        variant="info" />
+                </div>
+
+                <div class="crop-photo__upload">
+                    <div class="crop-photo__upload-icon">
+                        +
+                    </div>
+
+                    <h3>Upload a crop photo</h3>
+
+                    <p>
+                        Add a clear photo of the crop, leaf, stem, fruit or
+                        affected area.
+                    </p>
+
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Choose photo
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="photo-details-title">
+        <agrova-card>
+            <div class="crop-photo__panel">
+                <div class="crop-photo__panel-header">
+                    <div>
+                        <p class="crop-photo__eyebrow">PHOTO DETAILS</p>
+                        <h2 id="photo-details-title">Describe what the photo
+                            shows</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Optional context"
+                        variant="warning" />
+                </div>
+
+                <div class="crop-photo__details">
+                    <div class="crop-photo__detail">
+                        <span>Visible area</span>
+                        <strong>—</strong>
+                        <small>Leaf, stem, fruit, whole plant or affected
+                            patch</small>
+                    </div>
+
+                    <div class="crop-photo__detail">
+                        <span>Farmer note</span>
+                        <strong>—</strong>
+                        <small>What you noticed when taking the photo</small>
+                    </div>
+                </div>
+
+                <div class="crop-photo__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save photo observation
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="photo-safety-title">
+        <agrova-card>
+            <div class="crop-photo__panel crop-photo__safety">
+                <div>
+                    <p class="crop-photo__eyebrow">EVIDENCE BOUNDARY</p>
+                    <h2 id="photo-safety-title">
+                        A photo is evidence, not a diagnosis
+                    </h2>
+
+                    <p>
+                        The original photo and farmer observation will remain
+                        preserved.
+                        Later assessment, expert review or AI interpretation can
+                        be linked
+                        to the evidence without replacing it.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Evidence preserved"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

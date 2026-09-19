@@ -1,0 +1,90 @@
+// ============================================================
+// AGROVA — GLOBAL BASE
+// ============================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: var(--agrova-bg);
+  color: var(--agrova-text);
+
+  font-family: var(--agrova-font-family);
+  font-size: var(--agrova-text-md);
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--agrova-primary-soft);
+  color: var(--agrova-text);
+}
+
+
+// ------------------------------------------------------------
+// ACCESSIBILITY
+// ------------------------------------------------------------
+
+:focus-visible {
+  outline: 3px solid var(--agrova-primary-soft);
+  outline-offset: 3px;
+}
+
+
+// ------------------------------------------------------------
+// REDUCED MOTION
+// ------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,177 @@
+<div class="health">
+    <header class="health__header">
+        <div>
+            <p class="health__eyebrow">PASHU / HEALTH</p>
+            <h1>❤️ Animal health</h1>
+            <p class="health__subtitle">
+                Record what you observe about an animal so its health history
+                stays
+                connected to the animal, treatment and veterinary care.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Health record"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="health-overview-title">
+        <agrova-card>
+            <div class="health__panel">
+                <div class="health__panel-header">
+                    <div>
+                        <p class="health__eyebrow">HEALTH OVERVIEW</p>
+                        <h2 id="health-overview-title">Current health
+                            status</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="No records"
+                        variant="warning" />
+                </div>
+
+                <div class="health__status-grid">
+                    <div class="health__status-item">
+                        <span>Animal</span>
+                        <strong>—</strong>
+                        <small>No animal selected</small>
+                    </div>
+
+                    <div class="health__status-item">
+                        <span>Last observation</span>
+                        <strong>—</strong>
+                        <small>No health observation</small>
+                    </div>
+
+                    <div class="health__status-item">
+                        <span>Last treatment</span>
+                        <strong>—</strong>
+                        <small>No treatment recorded</small>
+                    </div>
+
+                    <div class="health__status-item">
+                        <span>Veterinary review</span>
+                        <strong>—</strong>
+                        <small>No professional assessment</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="observation-title">
+        <agrova-card>
+            <div class="health__panel">
+                <div class="health__panel-header">
+                    <div>
+                        <p class="health__eyebrow">ANIMAL OBSERVATION</p>
+                        <h2 id="observation-title">👀 Record what you see</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer observation"
+                        variant="success" />
+                </div>
+
+                <div class="health__form">
+                    <agrova-input
+                        label="Animal"
+                        placeholder="Select or enter animal" />
+
+                    <agrova-input
+                        label="Observation date"
+                        placeholder="DD / MM / YYYY" />
+
+                    <agrova-input
+                        label="Observed symptom"
+                        placeholder="Example: Fever, weakness, swelling" />
+
+                    <agrova-input
+                        label="Observed condition"
+                        placeholder="Describe what you noticed" />
+                </div>
+
+                <div class="health__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save observation
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="treatment-title">
+        <agrova-card>
+            <div class="health__panel">
+                <div class="health__panel-header">
+                    <div>
+                        <p class="health__eyebrow">CARE RECORD</p>
+                        <h2 id="treatment-title">💊 Record treatment or
+                            care</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer record"
+                        variant="info" />
+                </div>
+
+                <div class="health__form">
+                    <agrova-input
+                        label="Animal"
+                        placeholder="Select or enter animal" />
+
+                    <agrova-input
+                        label="Care date"
+                        placeholder="DD / MM / YYYY" />
+
+                    <agrova-input
+                        label="Treatment / care"
+                        placeholder="Enter treatment or care given" />
+
+                    <agrova-input
+                        label="Medicine"
+                        placeholder="Enter medicine if known" />
+                </div>
+
+                <div class="health__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save care record
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="professional-title">
+        <agrova-card>
+            <div class="health__panel health__professional">
+                <div>
+                    <p class="health__eyebrow">HUMAN IN THE LOOP</p>
+                    <h2 id="professional-title">
+                        🩺 Professional assessment stays separate
+                    </h2>
+                    <p>
+                        Farmer observations and care records will remain
+                        preserved.
+                        Veterinary assessment can later be connected to the
+                        animal's
+                        history without replacing what the farmer originally
+                        reported.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Veterinary review"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

@@ -1,0 +1,275 @@
+<div class="khet">
+    <header class="khet__header">
+        <div>
+            <p class="khet__eyebrow">FARM / KHET</p>
+
+            <h1>🌾 Khet</h1>
+
+            <p class="khet__subtitle">
+                Understand every field through its crop, soil, water,
+                observations and history.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Field intelligence"
+            variant="success" />
+    </header>
+
+    <!-- KHET OVERVIEW -->
+    <section aria-labelledby="overview-title">
+        <agrova-card>
+            <div class="khet__panel">
+                <div class="khet__section-header">
+                    <div>
+                        <p class="khet__eyebrow">KHET OVERVIEW</p>
+
+                        <h2 id="overview-title">
+                            Your fields stay connected
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Farm memory"
+                        variant="info" />
+                </div>
+
+                <div class="khet__overview">
+                    <div class="khet__overview-item">
+                        <span>Fields</span>
+                        <strong>—</strong>
+                        <small>No fields registered yet</small>
+                    </div>
+
+                    <div class="khet__overview-item">
+                        <span>Crops</span>
+                        <strong>—</strong>
+                        <small>No crops registered yet</small>
+                    </div>
+
+                    <div class="khet__overview-item">
+                        <span>Soil</span>
+                        <strong>—</strong>
+                        <small>No soil profile yet</small>
+                    </div>
+
+                    <div class="khet__overview-item">
+                        <span>Water</span>
+                        <strong>—</strong>
+                        <small>No water record yet</small>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FIELD -->
+    <section aria-labelledby="field-title">
+        <agrova-card>
+            <div class="khet__panel">
+                <div class="khet__section-header">
+                    <div>
+                        <p class="khet__eyebrow">FIELD IDENTITY</p>
+
+                        <h2 id="field-title">
+                            🌱 Know each field
+                        </h2>
+
+                        <p class="khet__section-description">
+                            Create a connected field record so location, area,
+                            history, crops and conditions stay together.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Available"
+                        variant="success" />
+                </div>
+
+                <div class="khet__feature-row">
+                    <div>
+                        <h3>Field profile</h3>
+
+                        <p>
+                            Record field identity, area, local land units and
+                            field
+                            history without losing the farmer's original
+                            information.
+                        </p>
+                    </div>
+
+                    <a
+                        routerLink="/khet/field/new"
+                        class="khet__link">
+                        Add field →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- CROP -->
+    <section aria-labelledby="crop-title">
+        <agrova-card>
+            <div class="khet__panel">
+                <div class="khet__section-header">
+                    <div>
+                        <p class="khet__eyebrow">CROP</p>
+
+                        <h2 id="crop-title">
+                            🌱 Know what is growing
+                        </h2>
+
+                        <p class="khet__section-description">
+                            Keep the crop, variety, sowing and stage connected
+                            to
+                            the field instead of treating them as separate
+                            records.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Available"
+                        variant="success" />
+                </div>
+
+                <div class="khet__feature-row">
+                    <div>
+                        <h3>Crop profile</h3>
+
+                        <p>
+                            Record crop, variety, sowing date and the crop's
+                            current
+                            stage over time.
+                        </p>
+                    </div>
+
+                    <a
+                        routerLink="/khet/crop/new"
+                        class="khet__link">
+                        Add crop →
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FIELD CONDITIONS -->
+    <section aria-labelledby="condition-title">
+        <agrova-card>
+            <div class="khet__panel">
+                <div class="khet__section-header">
+                    <div>
+                        <p class="khet__eyebrow">FIELD CONDITIONS</p>
+
+                        <h2 id="condition-title">
+                            🧪 Understand what is happening in the field
+                        </h2>
+
+                        <p class="khet__section-description">
+                            Soil, water, crop health and farmer observations
+                            will
+                            eventually combine into one field context.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Connected"
+                        variant="info" />
+                </div>
+
+                <div class="khet__condition-grid">
+                    <a
+                        routerLink="/khet/soil"
+                        class="khet__condition-card">
+                        <span class="khet__condition-icon">🧪</span>
+
+                        <h3>Soil</h3>
+
+                        <p>
+                            Soil profile, testing and soil history.
+                        </p>
+
+                        <span class="khet__condition-link">
+                            View soil →
+                        </span>
+                    </a>
+
+                    <a
+                        routerLink="/khet/water"
+                        class="khet__condition-card">
+                        <span class="khet__condition-icon">💧</span>
+
+                        <h3>Water</h3>
+
+                        <p>
+                            Water source, irrigation and water condition.
+                        </p>
+
+                        <span class="khet__condition-link">
+                            View water →
+                        </span>
+                    </a>
+
+                    <a
+                        routerLink="/khet/crop-health"
+                        class="khet__condition-card">
+                        <span class="khet__condition-icon">🌿</span>
+
+                        <h3>Crop health</h3>
+
+                        <p>
+                            Record symptoms and observations from the crop.
+                        </p>
+
+                        <span class="khet__condition-link">
+                            View crop health →
+                        </span>
+                    </a>
+
+                    <a
+                        routerLink="/khet/crop-photo"
+                        class="khet__condition-card">
+                        <span class="khet__condition-icon">📷</span>
+
+                        <h3>Crop photo</h3>
+
+                        <p>
+                            Keep visual observations connected to the field.
+                        </p>
+
+                        <span class="khet__condition-link">
+                            Add observation →
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FIELD MEMORY -->
+    <section aria-labelledby="memory-title">
+        <agrova-card>
+            <div class="khet__memory">
+                <div>
+                    <p class="khet__eyebrow">KHET MEMORY</p>
+
+                    <h2 id="memory-title">
+                        Every field becomes part of farm memory
+                    </h2>
+
+                    <p>
+                        Agrova will connect field history, crops, soil, water,
+                        observations, weather and outcomes over time so the
+                        farmer's next decision can use what actually happened
+                        before.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Connected history"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

@@ -1,0 +1,143 @@
+<aside class="agrova-nav">
+    <div class="agrova-nav__brand">
+        <div class="agrova-nav__logo">A</div>
+
+        <div>
+            <strong>Agrova</strong>
+            <span>Farm OS</span>
+        </div>
+    </div>
+
+    <div class="agrova-nav__farm">
+        <span class="agrova-nav__farm-label">CURRENT FARM</span>
+
+        <button type="button" class="agrova-nav__farm-switch">
+            <span class="agrova-nav__farm-icon">🌾</span>
+
+            <span class="agrova-nav__farm-copy">
+                <strong>My Farm</strong>
+                <small>Farm context</small>
+            </span>
+
+            <span class="agrova-nav__farm-arrow">⌄</span>
+        </button>
+    </div>
+
+    <nav class="agrova-nav__menu" aria-label="Agrova farm navigation">
+
+        <p class="agrova-nav__group-label">FARM</p>
+
+        <a
+            routerLink="/dashboard"
+            routerLinkActive="agrova-nav__item--active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">⌂</span>
+            <span>Today</span>
+        </a>
+
+        <a
+            routerLink="/farmer"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">👨‍🌾</span>
+            <span>Farmer</span>
+        </a>
+
+        <a
+            routerLink="/farm"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">🏡</span>
+            <span>Farm</span>
+        </a>
+
+        <p class="agrova-nav__group-label">LIFE ON THE FARM</p>
+
+        <a
+            routerLink="/pashu"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">🐄</span>
+            <span>Pashu</span>
+        </a>
+
+        <a
+            routerLink="/khet"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">🌾</span>
+            <span>Khet</span>
+        </a>
+
+        <a
+            routerLink="/resources"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">🧰</span>
+            <span>Resources</span>
+        </a>
+
+        <p class="agrova-nav__group-label">WORK</p>
+
+        <a
+            routerLink="/activities"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">🚜</span>
+            <span>Activities</span>
+        </a>
+
+        <a
+            routerLink="/tasks"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">📋</span>
+            <span>Tasks</span>
+        </a>
+
+        <a
+            routerLink="/weather"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item">
+            <span class="agrova-nav__icon">☀️</span>
+            <span>Weather</span>
+        </a>
+
+        <p class="agrova-nav__group-label">THINK</p>
+
+        <a
+            routerLink="/intelligence"
+            routerLinkActive="agrova-nav__item--active"
+            class="agrova-nav__item agrova-nav__item--intelligence">
+            <span class="agrova-nav__icon">🧠</span>
+
+            <span class="agrova-nav__item-copy">
+                <strong>Agrova</strong>
+                <small>Farm intelligence</small>
+            </span>
+        </a>
+
+    </nav>
+
+    <div class="agrova-nav__bottom">
+
+        <button type="button" class="agrova-nav__utility">
+            <span>🎙️</span>
+            <span>
+                <strong>Talk to Agrova</strong>
+                <small>Tell us what you see</small>
+            </span>
+        </button>
+
+        <div class="agrova-nav__profile">
+            <div class="agrova-nav__avatar">👨‍🌾</div>
+
+            <div>
+                <strong>Farmer</strong>
+                <span>Farm owner</span>
+            </div>
+        </div>
+
+    </div>
+</aside>

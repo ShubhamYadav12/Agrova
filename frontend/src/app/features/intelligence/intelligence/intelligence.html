@@ -1,0 +1,410 @@
+<div class="intelligence">
+    <header class="intelligence__header">
+        <div>
+            <p class="intelligence__eyebrow">FARM / INTELLIGENCE</p>
+
+            <h1>🧠 Farm Intelligence</h1>
+
+            <p class="intelligence__subtitle">
+                Bring the farm's observations, animals, fields, resources,
+                activities, tasks and weather together before deciding what
+                should happen next.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="Context first"
+            variant="success" />
+    </header>
+
+    <!-- CURRENT FARM CONTEXT -->
+    <section aria-labelledby="context-title">
+        <agrova-card>
+            <div class="intelligence__panel">
+                <div class="intelligence__section-header">
+                    <div>
+                        <p class="intelligence__eyebrow">FARM CONTEXT</p>
+
+                        <h2 id="context-title">
+                            What Agrova knows about this farm
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Context building"
+                        variant="info" />
+                </div>
+
+                <div class="intelligence__context-grid">
+                    <div class="intelligence__context-card">
+                        <span class="intelligence__context-icon">🌾</span>
+
+                        <h3>Khet</h3>
+
+                        <strong>—</strong>
+
+                        <p>
+                            Fields, crops, soil, water and crop observations.
+                        </p>
+                    </div>
+
+                    <div class="intelligence__context-card">
+                        <span class="intelligence__context-icon">🐄</span>
+
+                        <h3>Pashu</h3>
+
+                        <strong>—</strong>
+
+                        <p>
+                            Animals, health, care and connected history.
+                        </p>
+                    </div>
+
+                    <div class="intelligence__context-card">
+                        <span class="intelligence__context-icon">🧰</span>
+
+                        <h3>Resources</h3>
+
+                        <strong>—</strong>
+
+                        <p>
+                            Inputs, feed, equipment and farm capacity.
+                        </p>
+                    </div>
+
+                    <div class="intelligence__context-card">
+                        <span class="intelligence__context-icon">☀️</span>
+
+                        <h3>Weather</h3>
+
+                        <strong>—</strong>
+
+                        <p>
+                            Current and upcoming conditions around the farm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- INTELLIGENCE PIPELINE -->
+    <section aria-labelledby="pipeline-title">
+        <agrova-card>
+            <div class="intelligence__panel">
+                <div class="intelligence__section-header">
+                    <div>
+                        <p class="intelligence__eyebrow">
+                            INTELLIGENCE PIPELINE
+                        </p>
+
+                        <h2 id="pipeline-title">
+                            From what the farmer sees to what comes next
+                        </h2>
+
+                        <p class="intelligence__section-description">
+                            Agrova should understand the farm before attempting
+                            to
+                            produce a recommendation.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Core philosophy"
+                        variant="success" />
+                </div>
+
+                <div class="intelligence__pipeline">
+                    <div class="intelligence__pipeline-step">
+                        <span>👀</span>
+
+                        <h3>Observe</h3>
+
+                        <p>
+                            Capture what the farmer sees, hears or reports.
+                        </p>
+                    </div>
+
+                    <span class="intelligence__arrow">→</span>
+
+                    <div class="intelligence__pipeline-step">
+                        <span>🌾</span>
+
+                        <h3>Context</h3>
+
+                        <p>
+                            Connect the observation to the actual farm
+                            situation.
+                        </p>
+                    </div>
+
+                    <span class="intelligence__arrow">→</span>
+
+                    <div class="intelligence__pipeline-step">
+                        <span>🔎</span>
+
+                        <h3>Understand</h3>
+
+                        <p>
+                            Determine what is known and what is still missing.
+                        </p>
+                    </div>
+
+                    <span class="intelligence__arrow">→</span>
+
+                    <div class="intelligence__pipeline-step">
+                        <span>🧠</span>
+
+                        <h3>Analyze</h3>
+
+                        <p>
+                            Apply trusted knowledge to the available evidence.
+                        </p>
+                    </div>
+
+                    <span class="intelligence__arrow">→</span>
+
+                    <div class="intelligence__pipeline-step">
+                        <span>📋</span>
+
+                        <h3>Act</h3>
+
+                        <p>
+                            Present possible next actions for the farmer to
+                            decide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- INFORMATION GAPS -->
+    <section aria-labelledby="gaps-title">
+        <agrova-card>
+            <div class="intelligence__panel">
+                <div class="intelligence__section-header">
+                    <div>
+                        <p class="intelligence__eyebrow">
+                            INFORMATION GAPS
+                        </p>
+
+                        <h2 id="gaps-title">
+                            🔎 Sometimes Agrova needs more evidence
+                        </h2>
+
+                        <p class="intelligence__section-description">
+                            A good system should know when it does not have
+                            enough
+                            information instead of guessing.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Safety boundary"
+                        variant="warning" />
+                </div>
+
+                <div class="intelligence__gap-grid">
+                    <div class="intelligence__gap-card">
+                        <span>📷</span>
+
+                        <h3>Photo needed</h3>
+
+                        <p>
+                            A crop or animal condition may need a visual
+                            observation
+                            before it can be understood further.
+                        </p>
+                    </div>
+
+                    <div class="intelligence__gap-card">
+                        <span>🧪</span>
+
+                        <h3>Test needed</h3>
+
+                        <p>
+                            Soil or other measured evidence may be needed
+                            instead of
+                            relying only on assumptions.
+                        </p>
+                    </div>
+
+                    <div class="intelligence__gap-card">
+                        <span>👨‍🌾</span>
+
+                        <h3>More details needed</h3>
+
+                        <p>
+                            Agrova may need to ask the farmer what they
+                            observed,
+                            where it happened and when.
+                        </p>
+                    </div>
+
+                    <div class="intelligence__gap-card">
+                        <span>🧑‍⚕️</span>
+
+                        <h3>Expert needed</h3>
+
+                        <p>
+                            Some situations should be escalated to an
+                            appropriate
+                            professional instead of being guessed by AI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- CURRENT STATE -->
+    <section aria-labelledby="state-title">
+        <agrova-card>
+            <div class="intelligence__panel">
+                <div class="intelligence__section-header">
+                    <div>
+                        <p class="intelligence__eyebrow">
+                            CURRENT FARM STATE
+                        </p>
+
+                        <h2 id="state-title">
+                            No intelligence result yet
+                        </h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Needs farm data"
+                        variant="warning" />
+                </div>
+
+                <div class="intelligence__empty">
+                    <span class="intelligence__empty-icon">🧠</span>
+
+                    <div>
+                        <h3>
+                            Agrova needs real farm context first
+                        </h3>
+
+                        <p>
+                            Once farm, field, crop, animal, resource, activity,
+                            task and weather information is available, this area
+                            can become the place where Agrova explains what it
+                            understands and what may need attention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- RECOMMENDATION PRINCIPLE -->
+    <section aria-labelledby="recommendation-title">
+        <agrova-card>
+            <div class="intelligence__panel">
+                <div class="intelligence__section-header">
+                    <div>
+                        <p class="intelligence__eyebrow">
+                            RECOMMENDATION PRINCIPLE
+                        </p>
+
+                        <h2 id="recommendation-title">
+                            💡 Explain before suggesting
+                        </h2>
+
+                        <p class="intelligence__section-description">
+                            Recommendations should be connected to evidence,
+                            reasoning, alternatives and the farmer's actual
+                            constraints.
+                        </p>
+                    </div>
+
+                    <agrova-badge
+                        label="Farmer decides"
+                        variant="success" />
+                </div>
+
+                <div class="intelligence__recommendation">
+                    <div class="intelligence__recommendation-step">
+                        <span>1</span>
+
+                        <div>
+                            <h3>What do we know?</h3>
+
+                            <p>
+                                Show the relevant farm observations and verified
+                                data.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="intelligence__recommendation-step">
+                        <span>2</span>
+
+                        <div>
+                            <h3>Why does it matter?</h3>
+
+                            <p>
+                                Explain the relationship in farmer-friendly
+                                language.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="intelligence__recommendation-step">
+                        <span>3</span>
+
+                        <div>
+                            <h3>What are the options?</h3>
+
+                            <p>
+                                Present practical alternatives and relevant
+                                tradeoffs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="intelligence__recommendation-step">
+                        <span>4</span>
+
+                        <div>
+                            <h3>What happened after?</h3>
+
+                            <p>
+                                Record the eventual action and outcome for farm
+                                memory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <!-- FARM LEARNING -->
+    <section aria-labelledby="learning-title">
+        <agrova-card>
+            <div class="intelligence__memory">
+                <div>
+                    <p class="intelligence__eyebrow">FARM LEARNING</p>
+
+                    <h2 id="learning-title">
+                        🧠 Intelligence should learn from this farm
+                    </h2>
+
+                    <p>
+                        Agrova will eventually connect decisions, activities,
+                        weather, crop conditions, animal health, yield,
+                        economics
+                        and outcomes so future decisions can use the farm's own
+                        history.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Long-term intelligence"
+                    variant="info" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

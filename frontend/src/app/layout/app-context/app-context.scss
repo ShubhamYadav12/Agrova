@@ -1,0 +1,201 @@
+.agrova-context {
+    display: grid;
+    min-height: 68px;
+    grid-template-columns: minmax(150px, 0.8fr) auto auto auto;
+    align-items: center;
+    gap: 22px;
+    padding: 10px 28px;
+    border-bottom: 1px solid #e1ebe4;
+    background: rgba(255, 255, 255, 0.96);
+    box-sizing: border-box;
+}
+
+.agrova-context__location {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.agrova-context__farm-icon {
+    font-size: 23px;
+}
+
+.agrova-context__location strong,
+.agrova-context__location span {
+    display: block;
+}
+
+.agrova-context__label {
+    color: #718379;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.agrova-context__location strong {
+    margin-top: 2px;
+    color: #1d2d24;
+    font-size: 13px;
+}
+
+.agrova-context__place {
+    margin-top: 1px;
+    color: #8a9991;
+    font-size: 10px;
+}
+
+/* Operating context */
+
+.agrova-context__operating {
+    display: flex;
+    align-items: center;
+    min-width: 260px;
+    padding: 7px 12px;
+    border: 1px solid #dce9e0;
+    border-radius: 12px;
+    background: #fbfdfb;
+}
+
+.agrova-context__control {
+    min-width: 105px;
+}
+
+.agrova-context__control-label {
+    display: block;
+    color: #829188;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.agrova-context__control strong,
+.agrova-context__control span {
+    display: block;
+}
+
+.agrova-context__control strong {
+    margin-top: 2px;
+    color: #1e3026;
+    font-size: 11px;
+}
+
+.agrova-context__control>span:last-child {
+    margin-top: 1px;
+    color: #829188;
+    font-size: 9px;
+}
+
+.agrova-context__divider {
+    width: 1px;
+    height: 28px;
+    margin: 0 12px;
+    background: #dce8df;
+}
+
+/* Current location */
+
+.agrova-context__path {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #839188;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.agrova-context__path a {
+    color: #52705f;
+    text-decoration: none;
+}
+
+.agrova-context__path a:hover {
+    color: #173d2a;
+}
+
+.agrova-context__path strong {
+    color: #24362c;
+}
+
+/* Signals */
+
+.agrova-context__signals {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.agrova-context__signal,
+.agrova-context__attention {
+    display: flex;
+    min-height: 30px;
+    align-items: center;
+    gap: 6px;
+    padding: 0 9px;
+    border: 1px solid #e0eae3;
+    border-radius: 10px;
+    background: #fbfdfb;
+    color: #64766c;
+    font-size: 9px;
+}
+
+.agrova-context__signal {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.agrova-context__signal:hover {
+    border-color: #cfe0d5;
+    background: #f3f8f4;
+    color: #173d2a;
+}
+
+.agrova-context__attention {
+    color: #42634f;
+}
+
+.agrova-context__attention-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #43a66b;
+}
+
+@media (max-width: 1200px) {
+    .agrova-context {
+        grid-template-columns: minmax(140px, 1fr) auto auto;
+    }
+
+    .agrova-context__operating {
+        min-width: 235px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .agrova-context {
+        grid-template-columns: 1fr auto;
+    }
+
+    .agrova-context__operating {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .agrova-context {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 20px;
+    }
+
+    .agrova-context__signals {
+        display: none;
+    }
+
+    .agrova-context__path {
+        display: none;
+    }
+}

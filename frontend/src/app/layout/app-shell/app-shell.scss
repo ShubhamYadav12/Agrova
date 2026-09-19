@@ -1,0 +1,25 @@
+.agrova-shell {
+    min-height: 100vh;
+    background: #f4f8f5;
+}
+
+.agrova-shell__main {
+    min-height: 100vh;
+    margin-left: 270px;
+}
+
+.agrova-shell__content {
+    min-height: calc(100vh - 68px);
+}
+
+@media (max-width: 900px) {
+    .agrova-shell__main {
+        margin-left: 230px;
+    }
+}
+
+@media (max-width: 700px) {
+    .agrova-shell__main {
+        margin-left: 0;
+    }
+}

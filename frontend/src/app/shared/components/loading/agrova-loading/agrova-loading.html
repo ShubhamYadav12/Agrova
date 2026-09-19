@@ -1,0 +1,20 @@
+<div
+  class="agrova-loading"
+  [class.agrova-loading--sm]="size === 'sm'"
+  [class.agrova-loading--md]="size === 'md'"
+  [class.agrova-loading--lg]="size === 'lg'"
+  [class.agrova-loading--fullscreen]="fullscreen"
+  role="status"
+  [attr.aria-label]="label"
+>
+  <span
+    class="agrova-loading__spinner"
+    aria-hidden="true"
+  ></span>
+
+  @if (label) {
+    <span class="agrova-loading__label">
+      {{ label }}
+    </span>
+  }
+</div>

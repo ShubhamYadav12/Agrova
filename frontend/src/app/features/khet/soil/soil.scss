@@ -1,0 +1,133 @@
+.soil {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    display: grid;
+    gap: 24px;
+}
+
+.soil__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.soil__header h1,
+.soil__panel h2 {
+    margin: 0;
+}
+
+.soil__header h1 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1.15;
+}
+
+.soil__eyebrow {
+    margin: 0 0 6px;
+    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.soil__subtitle {
+    margin: 8px 0 0;
+    max-width: 760px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.soil__panel {
+    padding: 8px;
+}
+
+.soil__panel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.soil__summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.soil__summary-item {
+    display: grid;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.soil__summary-item span {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.soil__summary-item strong {
+    font-size: 1.1rem;
+}
+
+.soil__form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.soil__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+
+.soil__testing {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.soil__testing p {
+    margin: 8px 0 0;
+    max-width: 760px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .soil__summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .soil {
+        padding: 24px 16px 40px;
+    }
+
+    .soil__header,
+    .soil__testing {
+        flex-direction: column;
+    }
+
+    .soil__form {
+        grid-template-columns: 1fr;
+    }
+
+    .soil__actions {
+        justify-content: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .soil__summary {
+        grid-template-columns: 1fr;
+    }
+}

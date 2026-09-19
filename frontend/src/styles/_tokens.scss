@@ -1,0 +1,148 @@
+// ============================================================
+// AGROVA — DESIGN TOKENS
+// Global visual language for the entire application.
+// ============================================================
+
+:root {
+
+  // ----------------------------------------------------------
+  // BRAND
+  // ----------------------------------------------------------
+
+  --agrova-primary: #2f8f5b;
+  --agrova-primary-soft: #5fbd82;
+  --agrova-primary-deep: #17633b;
+
+  --agrova-secondary: #7bb661;
+  --agrova-accent: #b8e986;
+
+
+  // ----------------------------------------------------------
+  // BACKGROUNDS
+  // ----------------------------------------------------------
+
+  --agrova-bg: #f5f8f4;
+  --agrova-bg-elevated: #ffffff;
+
+  --agrova-surface: #ffffff;
+  --agrova-surface-soft: #f0f5f0;
+
+  --agrova-surface-glass: rgba(255, 255, 255, 0.62);
+
+
+  // ----------------------------------------------------------
+  // TEXT
+  // ----------------------------------------------------------
+
+  --agrova-text: #17221b;
+  --agrova-text-secondary: #435148;
+  --agrova-text-muted: #718078;
+  --agrova-text-on-primary: #ffffff;
+
+
+  // ----------------------------------------------------------
+  // STATUS
+  // ----------------------------------------------------------
+
+  --agrova-success: #2e9b63;
+  --agrova-warning: #d99a2b;
+  --agrova-danger: #d95757;
+  --agrova-info: #4d88c7;
+
+
+  // ----------------------------------------------------------
+  // BORDERS
+  // ----------------------------------------------------------
+
+  --agrova-border: rgba(23, 34, 27, 0.10);
+  --agrova-border-strong: rgba(23, 34, 27, 0.18);
+
+  --agrova-border-glass: rgba(255, 255, 255, 0.38);
+
+
+  // ----------------------------------------------------------
+  // RADIUS
+  // ----------------------------------------------------------
+
+  --agrova-radius-sm: 8px;
+  --agrova-radius-md: 14px;
+  --agrova-radius-lg: 20px;
+  --agrova-radius-xl: 28px;
+  --agrova-radius-pill: 999px;
+
+
+  // ----------------------------------------------------------
+  // SPACING
+  // ----------------------------------------------------------
+
+  --agrova-space-1: 4px;
+  --agrova-space-2: 8px;
+  --agrova-space-3: 12px;
+  --agrova-space-4: 16px;
+  --agrova-space-5: 20px;
+  --agrova-space-6: 24px;
+  --agrova-space-8: 32px;
+  --agrova-space-10: 40px;
+  --agrova-space-12: 48px;
+  --agrova-space-16: 64px;
+
+
+  // ----------------------------------------------------------
+  // TYPOGRAPHY
+  // ----------------------------------------------------------
+
+  --agrova-font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --agrova-text-xs: 0.75rem;
+  --agrova-text-sm: 0.875rem;
+  --agrova-text-md: 1rem;
+  --agrova-text-lg: 1.125rem;
+  --agrova-text-xl: 1.375rem;
+  --agrova-text-2xl: 1.75rem;
+  --agrova-text-3xl: 2.25rem;
+
+
+  // ----------------------------------------------------------
+  // SHADOWS
+  // ----------------------------------------------------------
+
+  --agrova-shadow-sm:
+    0 2px 8px rgba(23, 34, 27, 0.06);
+
+  --agrova-shadow-md:
+    0 8px 24px rgba(23, 34, 27, 0.10);
+
+  --agrova-shadow-lg:
+    0 18px 48px rgba(23, 34, 27, 0.14);
+
+
+  // ----------------------------------------------------------
+  // MOTION
+  // ----------------------------------------------------------
+
+  --agrova-motion-fast: 120ms;
+  --agrova-motion-normal: 220ms;
+  --agrova-motion-slow: 360ms;
+
+  --agrova-ease-standard:
+    cubic-bezier(0.2, 0.8, 0.2, 1);
+
+
+  // ----------------------------------------------------------
+  // LAYERS
+  // ----------------------------------------------------------
+
+  --agrova-z-base: 0;
+  --agrova-z-content: 10;
+  --agrova-z-header: 100;
+  --agrova-z-drawer: 500;
+  --agrova-z-modal: 1000;
+  --agrova-z-toast: 1500;
+}

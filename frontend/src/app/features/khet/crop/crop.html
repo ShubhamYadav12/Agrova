@@ -1,0 +1,104 @@
+<div class="crop">
+    <header class="crop__header">
+        <div>
+            <p class="crop__eyebrow">KHET / CROP</p>
+            <h1>Register crop</h1>
+            <p class="crop__subtitle">
+                Record what is growing in a field so Agrova can understand its
+                stage,
+                timing, conditions and future harvest.
+            </p>
+        </div>
+
+        <agrova-badge
+            label="New crop cycle"
+            variant="info" />
+    </header>
+
+    <section aria-labelledby="crop-profile-title">
+        <agrova-card>
+            <div class="crop__panel">
+                <div class="crop__panel-header">
+                    <div>
+                        <p class="crop__eyebrow">CROP PROFILE</p>
+                        <h2 id="crop-profile-title">Crop information</h2>
+                    </div>
+
+                    <agrova-badge
+                        label="Required"
+                        variant="warning" />
+                </div>
+
+                <div class="crop__form">
+                    <agrova-input
+                        label="Field"
+                        placeholder="Select or enter field" />
+
+                    <agrova-input
+                        label="Crop"
+                        placeholder="Example: Paddy" />
+
+                    <agrova-input
+                        label="Variety"
+                        placeholder="Enter variety if known" />
+
+                    <agrova-input
+                        label="Sowing date"
+                        placeholder="DD / MM / YYYY" />
+                </div>
+
+                <div class="crop__actions">
+                    <button
+                        agrovaButton
+                        variant="primary"
+                        size="md"
+                        type="button">
+                        Save crop
+                    </button>
+                </div>
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="crop-history-title">
+        <agrova-card>
+            <div class="crop__panel crop__history">
+                <div>
+                    <p class="crop__eyebrow">CROP HISTORY</p>
+                    <h2 id="crop-history-title">Every crop cycle stays
+                        recorded</h2>
+                    <p>
+                        Previous crops will remain part of the field history
+                        instead of
+                        being replaced when a new crop is registered.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Historical record"
+                    variant="success" />
+            </div>
+        </agrova-card>
+    </section>
+
+    <section aria-labelledby="crop-context-title">
+        <agrova-card>
+            <div class="crop__panel crop__context">
+                <div>
+                    <p class="crop__eyebrow">CROP CONTEXT</p>
+                    <h2 id="crop-context-title">Crop becomes the active field
+                        context</h2>
+                    <p>
+                        Crop stage, weather, soil, water, observations, inputs,
+                        harvest and
+                        yield records can later be connected to this crop cycle.
+                    </p>
+                </div>
+
+                <agrova-badge
+                    label="Field → Crop"
+                    variant="info" />
+            </div>
+        </agrova-card>
+    </section>
+</div>

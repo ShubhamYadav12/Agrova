@@ -1,0 +1,133 @@
+.water {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    display: grid;
+    gap: 24px;
+}
+
+.water__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.water__header h1,
+.water__panel h2 {
+    margin: 0;
+}
+
+.water__header h1 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1.15;
+}
+
+.water__eyebrow {
+    margin: 0 0 6px;
+    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.water__subtitle {
+    margin: 8px 0 0;
+    max-width: 760px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.water__panel {
+    padding: 8px;
+}
+
+.water__panel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.water__summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.water__summary-item {
+    display: grid;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.water__summary-item span {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.water__summary-item strong {
+    font-size: 1.1rem;
+}
+
+.water__form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.water__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+
+.water__context {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.water__context p {
+    margin: 8px 0 0;
+    max-width: 760px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .water__summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .water {
+        padding: 24px 16px 40px;
+    }
+
+    .water__header,
+    .water__context {
+        flex-direction: column;
+    }
+
+    .water__form {
+        grid-template-columns: 1fr;
+    }
+
+    .water__actions {
+        justify-content: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .water__summary {
+        grid-template-columns: 1fr;
+    }
+}

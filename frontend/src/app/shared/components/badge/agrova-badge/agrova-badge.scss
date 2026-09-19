@@ -1,0 +1,99 @@
+@use '../../../../../styles/motion' as motion;
+
+:host {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.agrova-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 28px;
+  max-width: 100%;
+
+  padding: 4px 10px;
+
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  font-family: var(--agrova-font-family);
+  font-size: var(--agrova-text-xs);
+  font-weight: 600;
+  line-height: 1.2;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include motion.agrova-transition;
+
+  &--default {
+    color: var(--agrova-text);
+    background: var(--agrova-surface-muted);
+    border-color: var(--agrova-border);
+  }
+
+  &--success {
+    color: var(--agrova-success);
+    background: color-mix(
+      in srgb,
+      var(--agrova-success) 10%,
+      var(--agrova-surface)
+    );
+    border-color: color-mix(
+      in srgb,
+      var(--agrova-success) 30%,
+      var(--agrova-border)
+    );
+  }
+
+  &--warning {
+    color: var(--agrova-warning);
+    background: color-mix(
+      in srgb,
+      var(--agrova-warning) 10%,
+      var(--agrova-surface)
+    );
+    border-color: color-mix(
+      in srgb,
+      var(--agrova-warning) 30%,
+      var(--agrova-border)
+    );
+  }
+
+  &--danger {
+    color: var(--agrova-danger);
+    background: color-mix(
+      in srgb,
+      var(--agrova-danger) 10%,
+      var(--agrova-surface)
+    );
+    border-color: color-mix(
+      in srgb,
+      var(--agrova-danger) 30%,
+      var(--agrova-border)
+    );
+  }
+
+  &--info {
+    color: var(--agrova-info);
+    background: color-mix(
+      in srgb,
+      var(--agrova-info) 10%,
+      var(--agrova-surface)
+    );
+    border-color: color-mix(
+      in srgb,
+      var(--agrova-info) 30%,
+      var(--agrova-border)
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .agrova-badge {
+    transition: none;
+  }
+}

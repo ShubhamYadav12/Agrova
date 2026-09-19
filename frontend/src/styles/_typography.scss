@@ -1,0 +1,266 @@
+// ============================================================
+// AGROVA — TYPOGRAPHY SYSTEM
+// Global type hierarchy for the entire application.
+// ============================================================
+
+
+// ------------------------------------------------------------
+// BASE TYPOGRAPHY
+// ------------------------------------------------------------
+
+body {
+  font-family: var(--agrova-font-family);
+  font-size: var(--agrova-text-md);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+
+// ------------------------------------------------------------
+// HEADINGS
+// ------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--agrova-text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+
+// ------------------------------------------------------------
+// DISPLAY
+// Large hero / landing-page typography.
+// ------------------------------------------------------------
+
+.agrova-display {
+  font-size: clamp(
+    2.5rem,
+    6vw,
+    5rem
+  );
+
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+
+// ------------------------------------------------------------
+// HEADING SCALE
+// ------------------------------------------------------------
+
+.agrova-h1 {
+  font-size: clamp(
+    2rem,
+    4vw,
+    3.25rem
+  );
+
+  line-height: 1.08;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+}
+
+
+.agrova-h2 {
+  font-size: clamp(
+    1.75rem,
+    3vw,
+    2.5rem
+  );
+
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+
+.agrova-h3 {
+  font-size: clamp(
+    1.375rem,
+    2.2vw,
+    1.875rem
+  );
+
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+
+.agrova-h4 {
+  font-size: var(--agrova-text-xl);
+  line-height: 1.25;
+  font-weight: 650;
+}
+
+
+// ------------------------------------------------------------
+// BODY TEXT
+// ------------------------------------------------------------
+
+.agrova-body {
+  font-size: var(--agrova-text-md);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+
+.agrova-body-lg {
+  font-size: var(--agrova-text-lg);
+  line-height: 1.65;
+}
+
+
+.agrova-body-sm {
+  font-size: var(--agrova-text-sm);
+  line-height: 1.55;
+}
+
+
+// ------------------------------------------------------------
+// SECONDARY / MUTED TEXT
+// ------------------------------------------------------------
+
+.agrova-text-secondary {
+  color: var(--agrova-text-secondary);
+}
+
+
+.agrova-text-muted {
+  color: var(--agrova-text-muted);
+}
+
+
+// ------------------------------------------------------------
+// LABELS
+// ------------------------------------------------------------
+
+.agrova-label {
+  font-size: var(--agrova-text-sm);
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+
+.agrova-label-caps {
+  font-size: var(--agrova-text-xs);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+// ------------------------------------------------------------
+// CAPTION
+// ------------------------------------------------------------
+
+.agrova-caption {
+  font-size: var(--agrova-text-xs);
+  line-height: 1.45;
+  color: var(--agrova-text-muted);
+}
+
+
+// ------------------------------------------------------------
+// NUMERIC / DATA DISPLAY
+// Useful for dashboards, statistics and metrics.
+// ------------------------------------------------------------
+
+.agrova-metric {
+  font-size: clamp(
+    1.75rem,
+    4vw,
+    3rem
+  );
+
+  line-height: 1;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+
+  font-variant-numeric: tabular-nums;
+}
+
+
+// ------------------------------------------------------------
+// TEXT WRAPPING
+// Prevent awkward overflow in responsive layouts.
+// ------------------------------------------------------------
+
+.agrova-text-balance {
+  text-wrap: balance;
+}
+
+
+.agrova-text-pretty {
+  text-wrap: pretty;
+}
+
+
+// ------------------------------------------------------------
+// FONT WEIGHT UTILITIES
+// ------------------------------------------------------------
+
+.agrova-font-regular {
+  font-weight: 400;
+}
+
+
+.agrova-font-medium {
+  font-weight: 500;
+}
+
+
+.agrova-font-semibold {
+  font-weight: 600;
+}
+
+
+.agrova-font-bold {
+  font-weight: 700;
+}
+
+
+.agrova-font-extrabold {
+  font-weight: 800;
+}
+
+
+// ------------------------------------------------------------
+// RESPONSIVE TYPOGRAPHY
+// ------------------------------------------------------------
+
+@media (max-width: 767px) {
+  .agrova-display {
+    letter-spacing: -0.035em;
+  }
+
+  .agrova-h1,
+  .agrova-h2,
+  .agrova-h3 {
+    letter-spacing: -0.02em;
+  }
+}
+
+
+// ------------------------------------------------------------
+// ACCESSIBILITY
+// ------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  .agrova-display,
+  .agrova-h1,
+  .agrova-h2,
+  .agrova-h3,
+  .agrova-h4,
+  .agrova-metric {
+    text-wrap: pretty;
+  }
+}

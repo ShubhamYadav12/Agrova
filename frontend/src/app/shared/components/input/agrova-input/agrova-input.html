@@ -1,0 +1,62 @@
+<div
+  class="agrova-input"
+  [class.agrova-input--error]="hasError"
+  [class.agrova-input--disabled]="disabled"
+>
+  @if (label) {
+    <label
+      class="agrova-input__label"
+      [for]="inputId"
+    >
+      {{ label }}
+
+      @if (required) {
+        <span
+          class="agrova-input__required"
+          aria-hidden="true"
+        >
+          *
+        </span>
+      }
+    </label>
+  }
+
+  <div class="agrova-input__control">
+    <input
+      class="agrova-input__field"
+      [id]="inputId"
+      [name]="name"
+      [type]="type"
+      [value]="value"
+      [placeholder]="placeholder"
+      [autocomplete]="autocomplete"
+      [required]="required"
+      [disabled]="disabled"
+      [readOnly]="readonly"
+      [attr.aria-invalid]="hasError"
+      [attr.aria-describedby]="
+        helperText || errorText
+          ? inputId + '-message'
+          : null
+      "
+      (input)="onInput($event)"
+    />
+  </div>
+
+  @if (errorText) {
+    <p
+      class="agrova-input__message agrova-input__message--error"
+      [id]="inputId + '-message'"
+      role="alert"
+    >
+      {{ errorText }}
+    </p>
+  } @else if (helperText) {
+    <p
+      class="agrova-input__message"
+      [id]="inputId + '-message'"
+    >
+      {{ helperText }}
+    </p>
+  }
+</div>

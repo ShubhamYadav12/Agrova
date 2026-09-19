@@ -1,0 +1,28 @@
+<section class="agrova-error-state" role="alert">
+  <div
+    class="agrova-error-state__icon"
+    aria-hidden="true"
+  >
+    !
+  </div>
+
+  <h2 class="agrova-error-state__title">
+    {{ title }}
+  </h2>
+
+  @if (message) {
+    <p class="agrova-error-state__message">
+      {{ message }}
+    </p>
+  }
+
+  @if (actionLabel) {
+    <button
+      type="button"
+      class="agrova-error-state__action"
+      (click)="onRetry()"
+    >
+      {{ actionLabel }}
+    </button>
+  }
+</section>

@@ -1,0 +1,4 @@
+CREATE TABLE agrova_schema_version_check (
+    id BIGSERIAL PRIMARY KEY,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
